@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>List CRM</title>
+    <meta name="description" content="A simplified CRM app that displays clients in a list that allows you to see if you have contacted them.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="js/bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="js/bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="apple-mobile-web-app-title" content="List CRM">
+    <meta name="application-name" content="List CRM">
+    <meta name="theme-color" content="#333333">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/; media-src *; script-src 'self' http://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.min.js; font-src https://fonts.googleapis.com/ https://fonts.gstatic.com/; connect-src 'self' http://matthew.rayner.yoobee.net.nz/WE06/WE06_API/">
+    <script src="js/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+    <div class='app-wrapper' ng-view></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.min.js"></script>
+    
+    
+    <script src="js/bower_components/angular-route/angular-route.js"></script>
+    <script src="js/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="js/bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="js/bower_components/ng-file-upload/ng-file-upload.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/modules/signup/signup.js"></script>
+    <script src="js/modules/login/login.js"></script>
+    <script src="js/modules/notes/notes.js"></script>
+    <script src="js/modules/projectsquotes/projectsquotes.js"></script>
+    <script src="js/modules/details/details.js"></script>
+    <script src="js/modules/call-list/call-list.js"></script>
+    <script src="js/modules/import/import.js"></script>
+    <script src="js/modules/export/export.js"></script>
+    <script src="js/components/version/version.js"></script>
+    <script src="js/components/version/version-directive.js"></script>
+    <script src="js/components/version/interpolate-filter.js"></script>
+  </body>
+</html>

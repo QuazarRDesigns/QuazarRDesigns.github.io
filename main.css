@@ -1,0 +1,251 @@
+/***Normalize.css***/
+html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+/*******************/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: #f29400;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+}
+
+.quazarrdesigns-logo {
+    background: url(img/header_img.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.logo__svg {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.logo__color {
+    fill: #fff;
+}
+
+.logo__text {
+    fill: #fff;
+    font-family: 'ArialMT', 'Arial', sans-serif;
+    font-size: 38px;
+}
+
+.navbar {
+    background: #2d2d2d;
+    box-shadow: 0px 10px 10px -5px rgba(30, 12, 2, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.menu {
+    color: #fff;
+    list-style: none;
+    padding: 1em 1em 0.1em 1em;
+    width: 100%;
+}
+
+.menu__item {
+    margin-bottom: 1em;
+}
+
+.menu__item a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+.menu__item a:after {
+    border-top: 0.2em solid rgba(242, 148, 0, 0);
+    content: "";
+    display: block;
+    margin-top: 0.5em;
+    transition: width ease-out 0.5s, border-color ease-out 0.5s;
+    width: 0%;
+}
+
+.menu__item a:hover:after,
+.menu__item a:focus:after,
+.menu__item--selected a:after {
+    border-top: 0.2em solid rgba(242, 148, 0, 1);
+    width: 100%;
+}
+
+.menu__item a:active:after {
+    border-top: 0.2em solid rgba(0, 0, 0, 1);
+}
+
+.header {
+    margin-bottom: -5px;
+}
+
+.header__background {
+    fill: #2d2d2d;
+}
+
+.header__text {
+    fill: #f29400;
+    font-family: sans-serif;
+    font-size: 66px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+}
+
+.home {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding-top: 1em;
+}
+
+.home__intro {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.portfolio {
+    align-content: space-between;
+    display: flex;
+    flex: 1 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+.portfolio__item {
+    background: transparent;
+    flex: 1 0;
+    height: 150px;
+    margin: 0.5em;
+    min-width: 200px;
+    position: relative;
+}
+
+.portfolio__item:after {
+    background: rgba(45, 45, 45, 0.9);
+    bottom: 0;
+    color: #fff;
+    display: block;
+    font-size: 1.5em;
+    line-height: 2em;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    transition: height 500ms;
+    width: 100%;
+}
+
+.portfolio__item:hover:after,
+.portfolio__item:focus:after {
+    height: 2em;
+}
+
+.portfolio__item--1 {
+    background: url(img/carbcounter_mobile.png) top center no-repeat;
+    background-size: cover;
+}
+
+.portfolio__item--1:after {
+    content: "CarbCounter+";
+}
+
+.portfolio__item--2 {
+    background: url(img/ListCRM.png) top center no-repeat;
+    background-size: cover;
+}
+
+.portfolio__item--2:after {
+    content: "List CRM";
+}
+
+.portfolio__item--3 {
+    background: url(img/FTTL.png) top center no-repeat;
+    background-size: cover;
+}
+
+.portfolio__item--3:after {
+    content: "Fly to the Limit";
+}
+
+.footer {
+    align-content: center;
+    background: #2d2d2d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+    width: 100%;
+}
+
+.copyright {
+    color: #000;
+    line-height: 40px;
+}
+
+.social-links {
+    display: block;
+    height: 40px;
+    margin: 0 1em;
+}
+
+.social-links a {
+    fill: #000;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    fill: #f29400;
+}
+
+.social-links__twitter,
+.twitter-logo {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+.social-links__github,
+.github-logo {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+.social-links__codepen,
+.codepen-logo {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+@media only screen and (min-width: 500px) {
+    .menu {
+        padding: 1em 1em 0em 1em;
+    }
+    .menu__item {
+        display: inline-block;
+        text-align: center;
+        margin: 0;
+        width: 100px;
+    }
+    .portfolio {
+        margin: 0 15%;
+    }
+    .portfolio__item--1 {
+        background: url(img/carbcounter_desktop.png) top center no-repeat;
+        background-size: cover;
+    }
+}

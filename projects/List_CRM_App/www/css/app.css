@@ -1,0 +1,662 @@
+/** Reset styles.
+*/
+*, html {
+  box-sizing: border-box; }
+
+ul {
+  padding-left: 0; }
+
+body {
+  background: #333; }
+
+.app-wrapper {
+  display: flex;
+  min-height: 100vh; }
+
+/** Base typography styles.
+*/
+html {
+  font-family: 'Montserrat', sans-serif; }
+
+/** Styles for links in a list.
+*/
+li {
+  list-style: none; }
+  li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; }
+    li a:visited {
+      color: #fff; }
+    li a:hover, li a:active, li a.current-item {
+      color: #333; }
+
+p {
+  color: #fff; }
+
+h1 {
+  color: #fff;
+  font-size: 2em; }
+
+h2, h3 {
+  color: #fff; }
+
+a {
+  color: #222; }
+
+h2 a {
+  color: #fff;
+  text-decoration: none; }
+
+.buttons__submit, .modal__submit, .modal__cancel, .signup__button, .auth__button, .import__submit, .export__submit {
+  background: #333;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 2em;
+  margin-top: 10px;
+  min-height: 2em;
+  width: 70%; }
+  .buttons__submit:hover, .modal__submit:hover, .modal__cancel:hover, .signup__button:hover, .auth__button:hover, .import__submit:hover, .export__submit:hover {
+    background: #2d2d2d; }
+
+.buttons__menu, .sidebar__logout {
+  align-self: center;
+  background: #333;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 1em;
+  padding: 10px 5em; }
+  .buttons__menu:hover, .sidebar__logout:hover {
+    background: #2d2d2d; }
+
+@media only screen and (min-width: 750px) {
+  .buttons__submit, .modal__submit, .modal__cancel, .signup__button, .auth__button, .import__submit, .export__submit {
+    width: 35%; } }
+
+.form__label, .signup__label, .login__label, .top-bar__label, .export__label {
+  color: #fff;
+  font-size: 1em;
+  margin-right: 15px; }
+
+.form__select, .modal__title, .modal__content, .modal__date, .signup__select, .login__select, .top-bar__select, .export__select {
+  background: #4d4d4d;
+  border: none;
+  color: #fff;
+  font-size: 1.5em; }
+
+@media only screen and (min-width: 770px) {
+  .form__select, .modal__title, .modal__content, .modal__date, .signup__select, .login__select, .top-bar__select, .export__select {
+    font-size: 30px; } }
+
+.modal__background {
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 2; }
+
+.modal {
+  align-items: center;
+  background: #3d3d3d;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 2; }
+
+.modal__inputs {
+  display: flex;
+  flex: 1 0;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%; }
+
+@media only screen and (min-width: 750px) {
+  .modal {
+    width: 70%; } }
+
+/** Styles for sidebar menu.
+*/
+.sidebar {
+  background: #4d4d4d;
+  box-shadow: 0px 0px 15px;
+  clear: right;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  left: -103%;
+  overflow-x: hidden;
+  padding: 0 0 0 0;
+  position: fixed;
+  transition: 0.5s;
+  max-width: 250px;
+  min-height: 100vh;
+  width: 75%;
+  z-index: 1; }
+
+.sidebar__menu {
+  padding: 0 2em 0 1em;
+  width: 100%;
+  /*.sidebar__menu-item*/ }
+  .sidebar__menu-item {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #b3b3b3;
+    height: 10vh;
+    /*.sidebar__menu-item:first-of-type*/ }
+    .sidebar__menu-item:first-of-type {
+      border: none; }
+
+.sidebar__close {
+  cursor: pointer;
+  margin-left: 1em; }
+
+.sidebar__logo {
+  width: 80%;
+  margin: 0 auto 1em auto; }
+
+@media only screen and (min-width: 750px) {
+  .sidebar {
+    position: static; }
+  .sidebar__close {
+    visibility: hidden; } }
+
+/** Styles for page header.
+*/
+.page-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  .page-header h1 {
+    width: 100%;
+    text-align: center; }
+
+.hamburger {
+  cursor: pointer;
+  margin: 0 0 0 0;
+  min-width: 3em;
+  max-width: 3em; }
+
+/** Styles for the signup page.
+*/
+.signup {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%; }
+
+.signup__background {
+  align-items: center;
+  background: #3d3d3d;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  width: 100%; }
+
+.signup__logo {
+  margin-bottom: 2em;
+  max-width: 350px;
+  width: 80%; }
+
+.signup__inputs {
+  width: 100%; }
+
+.signup__input {
+  margin-bottom: 2em; }
+
+.signup__label {
+  font-size: 2em;
+  margin: 0; }
+
+.signup__select {
+  font-size: 2.5em;
+  width: 100%; }
+
+.signup__auth {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  width: 100%; }
+
+.auth__login {
+  text-align: center; }
+
+@media only screen and (min-width: 500px) {
+  .signup__background {
+    height: auto;
+    width: 70vw; }
+  .signup__label {
+    width: 200px; }
+  .auth__button {
+    width: 30%; }
+  .auth__login {
+    font-size: 1.5em;
+    text-align: center; } }
+
+/** Styles for the login page.
+*/
+.login {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%; }
+
+.login__background {
+  align-items: center;
+  background: #3d3d3d;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  width: 100%; }
+
+.login__logo {
+  margin-bottom: 2em;
+  max-width: 350px;
+  width: 80%; }
+
+.login__inputs {
+  width: 100%; }
+
+.login__input {
+  margin-bottom: 2em; }
+
+.login__label {
+  font-size: 2em;
+  margin: 0; }
+
+.login__select {
+  font-size: 2.5em;
+  width: 100%; }
+
+.login__auth {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  width: 100%; }
+
+@media only screen and (min-width: 500px) {
+  .login__background {
+    height: auto;
+    width: 70vw; }
+  .login__label {
+    width: 200px; }
+  .auth__button {
+    width: 30%; }
+  .auth__signup {
+    font-size: 1.5em; } }
+
+/** Styles for the call-list page.
+*/
+.call-list {
+  width: 100%; }
+
+.top-bar {
+  background: #4d4d4d;
+  box-shadow: 0px 0px 15px;
+  display: flex;
+  flex-direction: row;
+  height: 130px;
+  justify-content: flex-start;
+  padding: 1em;
+  width: 100%; }
+  .top-bar__select {
+    background: #3d3d3d;
+    flex: 1 0;
+    width: 100%; }
+
+.top-bar__filters {
+  width: 100%; }
+
+.top-bar__sort_by, .top-bar__region {
+  display: flex;
+  margin-bottom: 1em; }
+
+.top-bar__controls {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  height: 100%;
+  justify-content: space-between;
+  margin-right: 1em;
+  width: 3em; }
+
+.top-bar__order {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  -webkit-user-select: none; }
+
+.call-list__list {
+  overflow-y: auto; }
+
+.call-list_item {
+  align-items: center;
+  color: #fff;
+  border-radius: 2em;
+  display: flex;
+  height: 5vh;
+  justify-content: space-between;
+  margin: 1em;
+  padding: 1.5em; }
+
+.item__buttons {
+  display: flex; }
+
+.item__status {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 80%; }
+
+.called {
+  background: #39b54a; }
+
+.visited {
+  background: #efa226; }
+
+.not_contacted {
+  background: #ff0000; }
+
+.circle {
+  border-radius: 100%;
+  cursor: pointer;
+  line-height: 0;
+  margin: 5px;
+  min-width: 20px;
+  width: 2em; }
+
+.item__details {
+  color: #fff;
+  font-size: 2em;
+  text-decoration: none; }
+
+@media only screen and (min-width: 750px) {
+  .top-bar__controls {
+    justify-content: center; }
+  .hamburger {
+    display: none; } }
+
+@media only screen and (min-width: 770px) {
+  .top-bar {
+    height: 75px; }
+  .top-bar__filters {
+    align-items: center;
+    display: flex;
+    height: 2.5em; }
+  .top-bar__region, .top-bar__sort_by {
+    align-items: center;
+    display: inline-flex;
+    flex: 1 0;
+    margin: 0 16px; }
+  .top-bar__select {
+    flex: 1 0; }
+  .item__details {
+    margin-left: 20px; } }
+
+/** Styles for the import page.
+*/
+.import {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%; }
+
+.import__background {
+  align-items: center;
+  background: #4d4d4d;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px 20px;
+  width: 100%; }
+
+.import__field {
+  align-items: center;
+  background: #3d3d3d;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  justify-content: center;
+  padding: 2em;
+  text-align: center;
+  width: 100%; }
+
+.import__select {
+  background: pink;
+  height: 45%;
+  position: absolute;
+  opacity: 0;
+  width: 80%; }
+
+.import__icon {
+  width: 20%; }
+
+@media only screen and (max-height: 420px) {
+  .import__icon {
+    width: 8%; } }
+
+@media only screen and (min-width: 770px) {
+  .import__select {
+    width: 50%; } }
+
+/** Styles for the export page.
+*/
+.export {
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  width: 100%; }
+
+.export__background {
+  align-items: center;
+  background: #4d4d4d;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px 20px;
+  width: 100%; }
+
+.export__field {
+  align-items: center;
+  background: #3d3d3d;
+  display: flex;
+  flex: 1 0;
+  font-size: 20px;
+  overflow-y: auto;
+  padding: 10px;
+  width: 100%; }
+
+.export__fields {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%; }
+
+.export__top_div {
+  width: 100%; }
+
+.export__bottom_div {
+  width: 100%; }
+
+.export__select {
+  width: 100%; }
+
+@media only screen and (min-width: 1060px) {
+  .export__fields {
+    height: 50%; }
+  .export__top_div {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+  .export__what, .export__with {
+    display: inline-block;
+    width: auto; }
+  .export__bottom_div {
+    width: auto; } }
+
+@media only screen and (max-height: 400px) {
+  .export__field {
+    justify-content: center; }
+  .export__top_div {
+    margin-top: 100px; } }
+
+/** Styles for the details page.
+*/
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .details .page-header {
+    padding-left: 1em;
+    width: 100%; }
+    .details .page-header .hamburger {
+      margin: 1em 0; }
+
+.header {
+  background: #3d3d3d;
+  margin-bottom: 1em;
+  padding: 10px; }
+
+.breadcrumbs {
+  background: #4d4d4d;
+  color: #222;
+  margin: 0 0;
+  padding: 10px 0 10px 10px; }
+
+.details__notes {
+  background: #3d3d3d;
+  padding: 10px;
+  margin-bottom: 1em; }
+
+.details__projectsquotes {
+  background: #3d3d3d;
+  padding: 10px; }
+
+.note {
+  background: #4d4d4d;
+  margin-top: 10px;
+  padding: 5px; }
+
+.projectquote {
+  background: #4d4d4d;
+  margin-top: 10px;
+  padding: 5px; }
+
+.date {
+  color: #222; }
+
+/** Styles for the notes page.
+*/
+.notes {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .notes .page-header {
+    padding-left: 1em;
+    width: 100%; }
+    .notes .page-header .hamburger {
+      margin: 1em 0; }
+
+.notes__notes {
+  background: #3d3d3d;
+  flex: 1 0;
+  padding: 10px; }
+
+.notes__new {
+  background: #4d4d4d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  margin-top: 10px;
+  min-height: 2em;
+  padding: 0 1em; }
+
+.notes__edit {
+  background: #333;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  margin-top: 10px;
+  min-height: 2em;
+  padding: 0 1em; }
+
+.notes__delete {
+  background: #333;
+  border: 1px #4d4d4d solid;
+  border-radius: 100%;
+  bottom: 15px;
+  color: #fff;
+  float: right;
+  left: 15px;
+  position: relative; }
+
+/** Styles for the projects/quotes page.
+*/
+.projectsquotes {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .projectsquotes .page-header {
+    padding-left: 1em;
+    width: 100%; }
+    .projectsquotes .page-header .hamburger {
+      margin: 1em 0; }
+
+.projectsquotes__projectsquotes {
+  background: #3d3d3d;
+  flex: 1 0;
+  padding: 10px; }
+
+.projectsquotes__new {
+  background: #4d4d4d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  margin-top: 10px;
+  min-height: 2em;
+  padding: 0 1em; }
+
+.projectsquotes__edit {
+  background: #333;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  margin-top: 10px;
+  min-height: 2em;
+  padding: 0 1em; }
+
+.projectsquotes__delete {
+  background: #333;
+  border: 1px #4d4d4d solid;
+  border-radius: 100%;
+  bottom: 15px;
+  color: #fff;
+  float: right;
+  left: 15px;
+  position: relative; }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.quazarrdesigns.list_crm"
+        version     = "1.0.0">
+
+    <name>List CRM</name>
+
+    <description>
+        A simplified CRM app that displays clients in a list that allows you to see if you have contacted them.
+    </description>
+
+    <author href="https://quazarrdesigns.github.io">
+        QuazarR Designs
+    </author>
+
+    <plugin name="cordova-plugin-whitelist" spec="1.3.2" source="npm" />
+
+    <access origin="http://matthew.rayner.yoobee.net.nz/WE06/WE06_API/*" />
+    <access origin="https://fonts.googleapis.com/*" />
+    <access origin="https://fonts.gstatic.com/*" />
+    <access origin="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.min.js*" />
+
+    <icon src="icon.png" width="512" height="512"/>
+
+    <platform name="android" />
+    <platform name="ios" />
+
+</widget>

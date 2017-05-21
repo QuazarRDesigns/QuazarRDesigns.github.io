@@ -1,0 +1,55 @@
+<body ng-app="myApp" ng-controller="Call - listCtrl">
+    <nav id="sidebar" class="sidebar">
+        <p class=sidebar__close ng-click="toggleSidebar()">&#9664;</p>
+        <div class="sidebar__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 587.96 196.25"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#39b54a;}.cls-3{fill:#efa226;}.cls-4{fill:red;}</style></defs><title>Final Logo</title><g id="Final_Logo" data-name="Final Logo"><path class="cls-1" d="M197,119.21V59.09h10.15v50.48h27.43v9.63Z"/><path class="cls-1" d="M244.9,64.34a6,6,0,1,1,4.3,1.81A5.87,5.87,0,0,1,244.9,64.34Zm9,54.87H244.3V73.46h9.63Z"/><path class="cls-1" d="M300.46,105.53A12.87,12.87,0,0,1,295.73,116Q291,119.9,283.6,119.9a32.48,32.48,0,0,1-10.36-1.81,31.11,31.11,0,0,1-9.5-5.07l4.64-7.48q8,6,15.48,6A8.07,8.07,0,0,0,289,110a4.68,4.68,0,0,0,1.89-3.83q0-3.44-9.12-6.19-.69-.26-1-.34-14.28-3.87-14.28-12.9a12.24,12.24,0,0,1,4.95-10.19q4.94-3.82,12.86-3.83a26.76,26.76,0,0,1,15,4.64l-3.61,7.14a21.57,21.57,0,0,0-12.13-3.7,11.06,11.06,0,0,0-5.59,1.25,4.06,4.06,0,0,0-2.15,3.74A3.42,3.42,0,0,0,278,89.11a21.64,21.64,0,0,0,4.34,1.46q2.79.69,4.95,1.38t4.17,1.55a27,27,0,0,1,4.34,2.41Q300.46,99,300.46,105.53Z"/><path class="cls-1" d="M323.25,81.2v23.22a7.54,7.54,0,0,0,1.72,5.2,6.11,6.11,0,0,0,4.82,1.93q3.1,0,5.93-3l4,6.79a16.42,16.42,0,0,1-11.22,4.56A14.44,14.44,0,0,1,318,115.64q-4.34-4.26-4.34-11.48v-23h-5.76V73.46h5.76V59.09h9.63V73.46h12V81.2Z"/><path class="cls-1" d="M399.7,110a21.23,21.23,0,0,0,9-1.76,31.09,31.09,0,0,0,7.91-5.63l6.54,6.71Q413.63,119.9,400,119.9t-22.62-8.77q-9-8.77-9-22.19t9.16-22.36q9.16-8.94,23.13-8.94A30.25,30.25,0,0,1,424,68L417.59,75a28.19,28.19,0,0,0-8.13-5.76,22.77,22.77,0,0,0-9-1.63,21.36,21.36,0,0,0-15.31,5.89,19.87,19.87,0,0,0-6.19,15,20.78,20.78,0,0,0,6.15,15.31A19.92,19.92,0,0,0,399.7,110Z"/><path class="cls-1" d="M483.55,78.62q0,14.88-13,18.75l15.74,21.84H473.4L459,99H445.71v20.21H435.56V59.09h22.36q13.76,0,19.69,4.64T483.55,78.62ZM470,87.13q3.1-2.66,3.1-8.56T470,70.49q-3.18-2.19-11.35-2.19h-12.9V89.8h12.64Q466.95,89.8,470,87.13Z"/><path class="cls-1" d="M508.32,119.21H498.17V59.09H514l18.15,37.75,18.15-37.75H566v60.11H555.87v-47l-21,41.71h-5.68l-20.9-41.71Z"/><path class="cls-1" d="M174.23,113.49v60.81A152.23,152.23,0,0,1,21.94,21.94H82.76V70.78H61.36a123.08,123.08,0,0,0,64,64V113.49Z"/><rect class="cls-2" x="96.93" y="21.94" width="77.3" height="21.94" rx="10.97" ry="10.97"/><rect class="cls-3" x="96.93" y="49.64" width="77.3" height="21.94" rx="10.97" ry="10.97"/><rect class="cls-4" x="96.93" y="77.34" width="77.3" height="21.94" rx="10.97" ry="10.97"/></g></svg>
+        </div>
+        <button class="sidebar__logout" ng-click="logout()">Logout</button>
+        <ul class="sidebar__menu">
+            <li class="sidebar__menu-item"><a class="current-item" href="#!/modules/call-list">Call List</a></li>
+            <li class="sidebar__menu-item"><a href="#!/modules/export">Export</a></li>
+            <li class="sidebar__menu-item"><a href="#!/modules/import">Import</a></li>
+            <div>Angular seed app: v<span app-version></span></div>
+        </ul>
+    </nav>
+    <main class="call-list">
+        <div class='top-bar'>
+            <div class="top-bar__controls">
+                <div class="hamburger" ng-click="toggleSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1</title><rect class="cls-1" width="100" height="20"/><rect class="cls-1" y="40" width="100" height="20"/><rect class="cls-1" y="80" width="100" height="20"/></svg>
+                </div>
+                <div class="top-bar__order" ng-click="changeOrder()">
+                    <span>&#9650;&#9660;</span>
+                </div>
+            </div>
+            <div class="top-bar__filters">
+                <div class='top-bar__region'>
+                    <label class='top-bar__label'>Region:</label>
+                    <select class='top-bar__select' ng-model="region" ng-change="getCallList()" ng-options="region.region as region.region for region in regions">
+                    </select>
+                </div>
+                <div class='top-bar__sort_by'>
+                    <label class='top-bar__label'>Sort by:</label>
+                    <select class='top-bar__select' ng-model="sortBy" ng-change="getCallList()">
+                        <option value="none">None</option>
+                        <option value="rating">Rating</option>
+                        <option value="status">Status</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="call-list__list">
+            <div class="call-list_item" ng-repeat="x in results" ng-class="x.status">
+                <span class="item__name">{{ x.name}}</span>
+                <div class="item__buttons">
+                    <div class="item__status">
+                        <div class="circle called" ng-click="changeStatus('called', x.id)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.4 28.4"><defs><style>.cls-1{fill:#fff;}</style></defs><title>CalledIcon</title><path class="cls-1" d="M23.4 16v7.4A18.4 18.4 0 0 1 5 5h7.4v5.9H9.7a14.8 14.8 0 0 0 7.8 7.8V16Z"/></svg></div>
+                        <div class="circle visited" ng-click="changeStatus('visited', x.id)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.35 28.35"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 30 copy</title><g id="Logo"><path class="cls-1" d="M10.11,16.62a2.38,2.38,0,1,1-2.38-2.37A2.37,2.37,0,0,1,10.11,16.62Z"/><path class="cls-1" d="M23.75,16.62a2.38,2.38,0,1,1-2.38-2.37A2.38,2.38,0,0,1,23.75,16.62Z"/><path class="cls-1" d="M25.89,13.86v1.91a.85.85,0,0,1-.85.85h-.73a2.94,2.94,0,0,0-5.88,0H10.68a2.95,2.95,0,0,0-5.89,0H3.3a.84.84,0,0,1-.85-.88l.06-1.49s.3-2.44,7.6-2.15c0,0,1.13-2.76,3.67-2.76H19c1.09,0,3.1,2,5,3.17a2.86,2.86,0,0,0,1,.36A1,1,0,0,1,25.89,13.86Z"/></g></svg></div>
+                        <div class="circle not_contacted" ng-click="changeStatus('not_contacted', x.id)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.4 28.4"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 30 copy 2</title><polygon class="cls-1" points="18 11.1 20.4 13.5 19.7 14.2 17.3 11.8 14.9 14.2 14.2 13.5 16.6 11.1 14.2 8.7 14.9 8 17.3 10.4 19.7 8 20.4 8.7 18 11.1"/><path class="cls-1" d="M23.4 16v7.4A18.4 18.4 0 0 1 5 5h7.4v5.9H9.7a14.9 14.9 0 0 0 7.7 7.8V16Z"/></svg></div>
+                    </div>
+                    <a class="item__details" href="#!/modules/details" ng-click="setCompanyId(x.id)">></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>

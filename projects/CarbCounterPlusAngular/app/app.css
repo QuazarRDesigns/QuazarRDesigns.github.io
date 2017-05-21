@@ -1,0 +1,1028 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+body {
+    background: #fcc90a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    min-height: 100vh;
+}
+
+select {
+    background: #ddd;
+    border: none;
+    height: 2em;
+    outline: none;
+    width: 100%;
+}
+
+input {
+    background: #ddd;
+    border: none;
+    margin-left: 0;
+    outline: none;
+    padding-left: 0.0625em;
+    width: 100%;
+}
+
+input:focus {
+    background: #ccc;
+}
+
+button {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+button:hover {
+    outline: 0.0625em solid #000;
+}
+
+fieldset {
+    background: #fff;
+    border: none;
+    margin: 0;
+    padding: 0.625em 0.625em 0 0.625em;
+    width: 100%;
+}
+
+/*background colour classes*/
+
+.background--yellow {
+    background: #fcc90a;
+}
+
+.background--blue {
+    background: #05baf0;
+}
+
+.background--green {
+    background: #3D994A;
+}
+
+.background--pink {
+    background: #e33663;
+}
+
+/***************************/
+
+/*
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+*/
+
+.app-wrapper {
+    display: inherit;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    font-size: 0.9em;
+}
+
+.selected {
+    outline: 0.0625em solid #000;
+}
+
+/***Top Styles***/
+
+.top {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 15vh;
+    padding: 1.25em;
+    width: 100%;
+}
+
+.top__top {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+}
+
+.top__top--home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.top__hamburger {
+    display: inline-block;
+    cursor: pointer;
+    height: 9vh;
+}
+
+.top__hamburger:hover .yellow {
+    fill: #e33633;
+}
+
+.top__home-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.top__logo {
+    display: inline-block;
+    margin-left: 0.2em;
+    height: 6vh;
+}
+
+/****************/
+
+/***Nav Styles***/
+
+.nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 60vw;
+}
+
+.nav :hover {
+    outline: 0.0625em solid #000;
+}
+
+.nav--desktop {
+    display: none;
+}
+
+.nav--desktop :hover {
+    outline: 0.0625em solid #000;
+}
+
+.nav__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 1.25em;
+    text-decoration: none;
+}
+
+/****************/
+
+/***Main Menu Styles***/
+
+.mainmenu {
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 1.25em;
+    padding: 1.25em;
+}
+
+.mainmenu__main-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+}
+
+.mainmenu__carb {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.2em;
+    text-decoration: none;
+    width: 100%;
+}
+
+.mainmenu__carb:hover {
+    outline: 0.0625em solid #000;
+}
+
+.carbcalc__logo {
+    width: 5em;
+}
+
+.mainmenu__dosage {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    margin-top: 1.875em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.2em;
+    text-decoration: none;
+    width: 100%;
+}
+
+.mainmenu__dosage:hover {
+    outline: 0.0625em solid #000;
+}
+
+.dosecalc__logo {
+    width: 5em;
+}
+
+.mainmenu__settings {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin:1.25em 0 0.5em 0;
+    padding: 1.2em;
+    text-decoration: none;
+}
+
+.mainmenu__settings:hover {
+    outline: 0.0625em solid #000;
+}
+
+.settings__logo {
+    width: 5em;
+}
+
+.app-version {
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-size: 0.5em;
+    margin-bottom: -1.5em;
+}
+
+/**********************/
+
+/***Carb Calculator Styles***/
+
+.carbcalc {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0.625em; 
+}
+
+.carbcalc__heading {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.carb-select {
+    background: #fff;
+    padding: 0.625em;
+    width: 83.33%;
+}
+
+.carb-select__select {
+    font-size: 1em;
+    height: 1.3em;
+    margin-bottom: 1.25em;
+}
+
+.carb-select__amount {
+    font-size: 1em;
+    height: 1.3em;
+}
+
+.add-carb {
+    font-size: 2em;
+    height: 1.5em;
+    margin:16px 0 16px 0;
+    margin: 1rem 0 1rem 0;
+    width: 40%;
+}
+
+.carb-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    margin-top:16px;
+    margin-top: 1rem;
+    height: 210px;
+    overflow-y: auto;
+    width: 83.33%;
+}
+
+.carb-list__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #fff;
+    color: #3d994a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-weight: 700;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin:3.2px 0;
+    margin: 0.2rem 0;
+    max-height: 6em;
+    min-height: 4em;
+    padding: 0 1em;
+}
+
+.carb-list__remove {
+    cursor: pointer;
+    font-size: 4em;
+    margin-right: 0.625em;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.carb-list__remove:hover {
+    color: #000;
+}
+
+.carb-list__amount {
+    font-weight: 400;
+    margin-left: 0.625em;
+}
+
+.carb-total {
+    background: #fff;
+    color: #05baf0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    font-size: 3em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.15em 0.15em;
+    min-width: 50%;
+}
+
+.carb-total__total {
+    font-weight: 700;
+}
+
+/***Dosage Calculator Styles***/
+
+.dosecalc {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    font-size: 1.1em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0.625em;  
+}
+
+.dosecalc__heading {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.glucose, .carb {
+    background: #fff;
+    padding: 0.625em;
+    margin-bottom: 0.625em;
+    width: 83.33%;
+}
+
+.glucose__heading {
+    color: #05baf0;
+    font-size: 1.2em;
+    margin-bottom: 0.3125em;
+}
+
+.carb__heading {
+    color: #3d994a;
+    font-size: 1.2em;
+    margin-bottom: 0.3125em;
+}
+
+.glucose__input-wrapper, .carb__input-wrapper { 
+    -webkit-box-align: end; 
+        -ms-flex-align: end; 
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.glucose__input, .carb__input {
+    font-size: 1em;
+}
+
+.glucose__unit, .carb__unit {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 700;
+    margin-left: 0.5em;
+}
+
+.dosage {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.625em;
+    width: 83.33%;
+}
+
+.dosage-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+}
+
+.dosage__heading {    
+    color: #e33663;
+    font-size: 1.2em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0.3125em;
+}
+
+.ratio__heading{
+    color: #3d994a;
+    margin-bottom: -0.375em;
+    margin-top: 1em;
+}
+
+.dosage__result--ratioOneDP {
+    color: #3d994a;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.correction__heading {
+    color: #05baf0;
+    margin-bottom: -0.375em;
+}
+
+.dosage__result--correctionOneDP {
+    color: #05baf0;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.dosage__result--ratio, .dosage__result--correction {
+    font-size: 0.6em;
+}
+
+.total__heading {
+    color: #e33663;
+    margin-bottom: -0.375em;
+    margin-top: 1em;
+}
+
+.dosage__result--totalOneDP {
+    color: #e33663;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.dosage__unit {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.result-wrapper {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.total-wrapper {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+}
+
+.dosage__result--total {
+    font-size: 0.6em;
+}
+
+/***Settings Styles***/
+
+.settings {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0.625em; 
+}
+
+.settings__heading {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.settings__form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 83.33%;
+}
+
+.setting__heading {
+    font-size: 1.2em;
+}
+
+.carb-ratio__inputs {
+    display: inline-block;
+    height: 1.5em;
+    margin: 0.625em;
+    min-width: 3em;
+    max-width: 35%;
+}
+
+.settings__submit {
+    color: #fff;
+    display: block;
+    height: 3em;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.settings__submit:hover {
+    outline: 1px solid #000;
+}
+
+.settings__submit:focus {
+    background: #3d994a;
+}
+
+@media only screen and (min-width: 32em) {
+
+    .dosage-wrapper {
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .results-wrapper {
+        margin-right: 1em;
+    }
+
+    .total {
+        -ms-flex-item-align: center;
+            align-self: center;
+    }
+
+    .dosage__result--total {
+        text-align: center;
+    }
+
+}
+
+/***Tablet Styles***/
+
+@media only screen and (min-width: 30em) {
+
+    .top {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        min-height: 15vh;
+        padding: 0.0625em 0;
+        width: 100%;
+    }
+
+    .top__top {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+        height: 100%;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
+    .top__hamburger {
+        display: none;
+    }
+
+    .top__logo {
+        -ms-flex-item-align: center;
+            align-self: center;
+        min-height: 8vh;
+        margin-bottom: 0.625em;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav--desktop {    
+        display: -webkit-box;    
+        display: -ms-flexbox;    
+        display: flex;
+        font-size: 0.8em;
+        margin: 0;
+        width: 95%;
+    }
+
+    .nav__item--desktop{
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        font-size: 1em;
+        height: 2.5em;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin: 0 0.625em;
+        padding: 0.625em;
+        text-decoration: none;
+    }
+
+    .mainmenu__main-links {
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    }
+
+    .mainmenu__carb {
+        margin-right: 0.625em;
+    }
+
+    .mainmenu__dosage {
+        margin: 0 0 0 0.625em;
+    }   
+
+    .mainmenu__settings {
+        -ms-flex-item-align: center;
+            align-self: center;
+        width: 50%;
+    }
+    
+    .mainmenu {
+        font-size: 1.1em;
+    }
+
+    .carbcalc {
+        font-size: 1.1em;
+    }
+
+    .dosecalc {
+        font-size: 1.1em;
+    }
+
+    .settings {
+        font-size: 1.1em;
+    }
+}
+
+/***Desktop Styles***/
+
+@media only screen and (min-width: 64em) {
+    
+    .app-wrapper {
+        font-size: 1.0em;
+    }
+
+    .top {
+        min-height: 15vh;
+        margin: 0;
+        padding: 0 1em;
+        width: 100%;
+    }
+
+    .top__top {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+        height: 100%;
+    }
+
+    .top__logo {
+        margin: 0;
+        min-height: 8vh;
+    }
+
+    .nav--desktop {    
+        display: -webkit-inline-box;    
+        display: -ms-inline-flexbox;    
+        display: inline-flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 60%;
+    }
+
+    .nav__item--desktop{
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        font-size: 1.2em;
+        min-height: 8vh;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-left: 1.25em;
+        padding: 0.625em;
+        text-decoration: none;
+    }
+
+    .mainmenu {
+        font-size: 1.4em;
+    }
+    
+    .dosecalc {
+        font-size: 1.4em;
+    }
+
+    .carbcalc {
+        font-size: 1.4em;
+    }
+
+    .settings {
+        font-size: 1.4em;
+    }
+
+    .settings__form {
+        -ms-flex-line-pack: distribute;
+            align-content: space-around;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    }
+
+    .settings__fieldset--carbratio {
+        -webkit-box-flex: 2;
+            -ms-flex: 2 1 15em;
+                flex: 2 1 15em;
+        margin-right: 0.625em;
+    }
+
+    .settings__fieldset--carbunit {
+        -webkit-box-flex: 2;
+            -ms-flex: 2 1 15em;
+                flex: 2 1 15em;
+        margin-right: 0.625em;
+    }
+    .settings__fieldset--BGunit {
+        -webkit-box-flex: 2;
+            -ms-flex: 2 1 15em;
+                flex: 2 1 15em;
+        margin-right: 0.625em;
+    }
+
+    .settings__fieldset--target {
+        -webkit-box-flex: 2;
+            -ms-flex: 2 1 15em;
+                flex: 2 1 15em;
+        margin-right: 0.625em;
+    }
+
+    .settings__fieldset--correction {
+        -webkit-box-flex: 2;
+            -ms-flex: 2 1 100%;
+                flex: 2 1 100%;
+        margin-right: 0.625em;
+    }
+
+    .settings__submit {
+        width: 100%;
+        margin: 0 40%;
+        min-width: 10em;
+    }
+
+    .add-carb {
+        width: 10%;
+    }
+
+    .carb-list {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-right: 0.5em;
+    }
+
+    .carb-list__item {
+        min-height: 2em;
+    }
+}
+
+@media only screen and (min-width: 120em) {
+
+    .app-wrapper {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 140em) {
+    
+    .app-wrapper {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 160em) {
+        
+    .app-wrapper {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 200em) {
+        
+    .app-wrapper {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (min-width: 260em) {
+ 
+    .app-wrapper {
+        font-size: 4em;
+    }
+}
