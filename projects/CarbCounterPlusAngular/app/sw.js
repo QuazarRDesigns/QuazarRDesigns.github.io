@@ -1,15 +1,15 @@
-var CACHE_NAME = 'my-site-cache-v1';
+var CACHE_NAME = 'carbcounter-cache-v1 ';
 var urlsToCache = [
-    'bower_components',
-    'carbcalc',
-    'components/version',
-    'core',
-    'dosecalc',
-    'favicons',
-    'settings',
-    'index.html',
-    'app.js',
-    'app.css'
+    'https://quazarrdesigns.github.io/projects/CarbCounterPlusAngular/app/bower_components',
+    'https://quazarrdesigns.github.io/projects/CarbCounterPlusAngular/app/carbcalc',
+    'https://quazarrdesigns.github.io/projects/CarbCounterPlusAngular/app/components/version',
+    'https://quazarrdesigns.github.io/projects/CarbCounterPlusAngular/app/core',
+    'https://quazarrdesigns.github.io/projects/CarbCounterPlusAngular/app/dosecalc',
+    'https://quazarrdesigns.github.io/projects/CarbCounterPlusAngular/app/favicons',
+    'https://quazarrdesigns.github.io/projects/CarbCounterPlusAngular/app/settings',
+    'https://quazarrdesigns.github.io/projects/CarbCounterPlusAngular/app/index.html',
+    'https://quazarrdesigns.github.io/projects/CarbCounterPlusAngular/app/app.js',
+    'https://quazarrdesigns.github.io/projects/CarbCounterPlusAngular/app/app.css'
 ];
 
 self.addEventListener('install', function (event) {
