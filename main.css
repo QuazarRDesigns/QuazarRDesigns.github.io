@@ -5,247 +5,325 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    background: #f29400;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-    height: 100vh;
+  background: #f29420;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
 .quazarrdesigns-logo {
-    background: url(img/header_img.png) no-repeat;
-    background-size: cover;
-    width: 100%;
+  background: url(img/header_img.png) no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 .logo__svg {
-    display: block;
-    margin: 0 auto;
-    max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .logo__color {
-    fill: #fff;
+  fill: #fff;
 }
 
 .logo__text {
-    fill: #fff;
-    font-family: 'ArialMT', 'Arial', sans-serif;
-    font-size: 38px;
+  fill: #fff;
+  font-family: 'ArialMT', 'Arial', sans-serif;
+  font-size: 38px;
 }
 
 .navbar {
-    background: #2d2d2d;
-    box-shadow: 0px 10px 10px -5px rgba(30, 12, 2, 0.4);
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  background: #2d2d2d;
+  box-shadow: 0px 10px 10px -5px rgba(30, 12, 2, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .menu {
-    color: #fff;
-    list-style: none;
-    padding: 1em 1em 0.1em 1em;
-    width: 100%;
+  color: #fff;
+  list-style: none;
+  padding: 1em 1em 0.1em 1em;
+  width: 100%;
 }
 
 .menu__item {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .menu__item a {
-    color: #fff;
-    display: block;
-    text-decoration: none;
+  color: #fff;
+  display: block;
+  text-decoration: none;
 }
 
 .menu__item a:after {
-    border-top: 0.2em solid rgba(242, 148, 0, 0);
-    content: "";
-    display: block;
-    margin-top: 0.5em;
-    transition: width ease-out 0.5s, border-color ease-out 0.5s;
-    width: 0%;
+  border-top: 0.2em solid rgba(242, 148, 0, 0);
+  content: "";
+  display: block;
+  margin-top: 0.5em;
+  transition: width ease-out 0.5s, border-color ease-out 0.5s;
+  width: 0%;
 }
 
 .menu__item a:hover:after,
 .menu__item a:focus:after,
 .menu__item--selected a:after {
-    border-top: 0.2em solid rgba(242, 148, 0, 1);
-    width: 100%;
+  border-top: 0.2em solid rgba(242, 148, 0, 1);
+  width: 100%;
 }
 
 .menu__item a:active:after {
-    border-top: 0.2em solid rgba(0, 0, 0, 1);
+  border-top: 0.2em solid rgba(0, 0, 0, 1);
 }
 
 .header {
-    margin-bottom: -5px;
+  margin-bottom: -5px;
 }
 
 .header__background {
-    fill: #2d2d2d;
+  fill: #2d2d2d;
 }
 
 .header__text {
-    fill: #f29400;
-    font-family: sans-serif;
-    font-size: 66px;
-    font-weight: 700;
-    letter-spacing: 0.07em;
+  fill: #f29420;
+  font-family: sans-serif;
+  font-size: 66px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
 }
 
 .home {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    padding-top: 1em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  padding-top: 1em;
 }
 
 .home__intro {
-    color: #fff;
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
 }
 
-.portfolio {
-    align-content: space-between;
-    display: flex;
-    flex: 1 0;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0.5em;
+/** Modal Styles
+*/
+
+.modal.closed, .modal-overlay.closed {
+  display: none;
+}
+
+.modal-overlay{
+  align-items: center;
+  display: flex;
+  background: rgba(30, 12, 2, 0.4);
+  position: fixed;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.modal {
+  background: #f29420;
+  display: flex;
+  height: 80vh;
+  padding: 0.5em;
+  width: 80vw;
+}
+
+.modal__img {
+  height: 100%;
+  margin-right: 0.5em;
+  width: 60%;
+}
+
+.modal-aside {
+  flex: 1 0;
+}
+/** Portfolio Styles
+*/
+
+.portfolio {;
+            padding: 0.5em;
+}
+.portfolio-section__heading {
+  display: block;
+}
+
+.portfolio-section {
+  display: flex;
 }
 
 .portfolio__item {
-    background: transparent;
-    flex: 1 0;
-    height: 150px;
-    margin: 0.5em;
-    min-width: 200px;
-    position: relative;
+  background: #2d2d2d;
+  flex: 1 0;
+  height: 150px;
+  margin: 0.5em;
+  min-width: 200px;
+  position: relative;
 }
 
 .portfolio__item:after {
-    background: rgba(45, 45, 45, 0.9);
-    bottom: 0;
-    color: #fff;
-    display: block;
-    font-size: 1.5em;
-    line-height: 2em;
-    height: 0;
-    overflow: hidden;
-    position: absolute;
-    text-align: center;
-    transition: height 500ms;
-    width: 100%;
+  background: rgba(45, 45, 45, 0.9);
+  bottom: 0;
+  color: #fff;
+  display: block;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0.2em;
+  position: absolute;
+  text-align: center;
+  transition: max-height 800ms;
+  width: 100%;
 }
 
 .portfolio__item:hover:after,
 .portfolio__item:focus:after {
-    height: 2em;
+  max-height: 4em;
 }
 
 .portfolio__item--1 {
-    background: url(img/carbcounter_mobile.png) top center no-repeat;
-    background-size: cover;
+  background: url(img/portfolio/carbcounter_mobile.png) top center no-repeat;
+  background-size: cover;
 }
 
 .portfolio__item--1:after {
-    content: "CarbCounter+";
+  content: "CarbCounter+ PWA";
 }
 
 .portfolio__item--2 {
-    background: url(img/ListCRM.png) top center no-repeat;
-    background-size: cover;
+  background: url(img/portfolio/ListCRM.png) top center no-repeat;
+  background-size: cover;
 }
 
 .portfolio__item--2:after {
-    content: "List CRM";
+  content: "List CRM Phonegap App";
 }
 
 .portfolio__item--3 {
-    background: url(img/FTTL.png) top center no-repeat;
-    background-size: cover;
+  background: url(img/portfolio/FTTL.png) top center no-repeat;
+  background-size: cover;
 }
 
 .portfolio__item--3:after {
-    content: "Fly to the Limit";
+  content: "Fly to the Limit";
+}
+
+.portfolio__item--4 {
+  background: url(img/portfolio/SAB_business_card.png) center -5px no-repeat;
+  background-size: cover;
+}
+
+.portfolio__item--4:after {
+  content: "SAB Brand Identity";
+}
+
+.portfolio__item--5 {
+  background: url(img/portfolio/EECA_billboard.png) center -5px no-repeat;
+  background-size: cover;
+}
+
+.portfolio__item--5:after {
+  content: "EECA Ad Campaign";
+}
+
+.portfolio__item--6 {
+  background: url(img/portfolio/NZSci_Magazine.png) center -5px no-repeat;
+  background-size: cover;
+}
+
+.portfolio__item--6:after {
+  content: "NZ Scientific Magazine";
+}
+
+.portfolio__item--7 {
+  background: url(img/portfolio/KITK_brochure.png) center -5px no-repeat;
+  background-size: cover;
+}
+
+.portfolio__item--7:after {
+  content: "Kids in the Kitchen Brochure";
 }
 
 .footer {
-    align-content: center;
-    background: #2d2d2d;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1em;
-    width: 100%;
+  align-content: center;
+  background: #2d2d2d;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em;
+  width: 100%;
 }
 
 .copyright {
-    color: #000;
-    line-height: 40px;
+  color: #000;
+  line-height: 40px;
 }
 
 .social-links {
-    display: block;
-    height: 40px;
-    margin: 0 1em;
+  display: block;
+  height: 40px;
+  margin: 0 1em;
 }
 
 .social-links a {
-    fill: #000;
+  fill: #000;
 }
 
 .social-links a:hover,
 .social-links a:focus {
-    fill: #f29400;
+  fill: #f29420;
 }
 
 .social-links__twitter,
 .twitter-logo {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
 }
 
 .social-links__github,
 .github-logo {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
 }
 
 .social-links__codepen,
 .codepen-logo {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
 }
 
 @media only screen and (min-width: 500px) {
-    .menu {
-        padding: 1em 1em 0em 1em;
-    }
-    .menu__item {
-        display: inline-block;
-        text-align: center;
-        margin: 0;
-        width: 100px;
-    }
-    .portfolio {
-        margin: 0 15%;
-    }
-    .portfolio__item--1 {
-        background: url(img/carbcounter_desktop.png) top center no-repeat;
-        background-size: cover;
-    }
+  .menu {
+    padding: 1em 1em 0em 1em;
+  }
+  .menu__item {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    width: 100px;
+  }
+  .portfolio {
+    margin: 0 15%;
+  }
+  .portfolio__item--1 {
+    background: url(img/portfolio/carbcounter_desktop.png) top center no-repeat;
+    background-size: cover;
+  }
 }
