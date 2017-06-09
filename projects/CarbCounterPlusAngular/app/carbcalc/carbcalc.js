@@ -9,7 +9,7 @@ angular.module('myApp.carbcalc', ['ngRoute'])
                 });
             }])
 
-        .controller('CarbcalcCtrl', ['$scope', function ($scope) {
+        .controller('CarbcalcCtrl', ['$scope', '$rootScope', '$location', function ($scope, $rootScope, $location) {
 
 //                ***Use these default values***
 
@@ -68,6 +68,11 @@ angular.module('myApp.carbcalc', ['ngRoute'])
                             }
                         }
                     }
+                };
+                
+                $scope.calculateDosage= function () {
+                  $rootScope.carbs = $scope.result;
+                  $location.path('/dosecalc');
                 };
 
                 $scope.selected = function () {

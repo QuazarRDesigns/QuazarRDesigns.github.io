@@ -440,7 +440,7 @@ fieldset {
 
 .carb-list__remove {
     cursor: pointer;
-    font-size: 4em;
+    font-size: 2em;
     margin-right: 0.625em;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -458,6 +458,7 @@ fieldset {
 }
 
 .carb-total {
+  align-items: center;
     background: #fff;
     color: #05baf0;
     display: -webkit-box;
@@ -470,11 +471,19 @@ fieldset {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0.15em 0.15em;
+    position: relative;
     min-width: 50%;
 }
 
 .carb-total__total {
     font-weight: 700;
+}
+
+.carb-total__send {
+  font-size: 0.3em;
+  height: 2em;
+  margin-left: 1em;
+  padding: 0 20px;
 }
 
 /***Dosage Calculator Styles***/

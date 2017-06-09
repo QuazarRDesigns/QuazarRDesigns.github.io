@@ -25,7 +25,9 @@ angular.module('myApp.settings', ['ngRoute'])
 
                 $scope.carb = 10;
                 
-                $scope.correctionFactor = 2;
+                $scope.target = 6.5;
+                
+                $scope.correctionFactor = 2.0;
                 
                 if (typeof (Storage) !== "undefined") {
                     if (localStorage.insulin) {

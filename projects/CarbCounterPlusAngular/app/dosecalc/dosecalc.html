@@ -42,19 +42,19 @@
             <div class="dosage-wrapper">
 
                 <div class="results-wrapper">
+                  <p class="ratio__heading">Carb Coverage (Ratio {{carbRatio.view}})</p>
+                    <div class="result-wrapper">
+                        <p class="dosage__result--ratioOneDP">{{ratioResultOneDP}}</p>
+                        <p class="dosage__unit">IU</p>
+                    </div>
+                    <p class="dosage__result--ratio">{{ratioResult}} (rounded)</p>
+                  
                     <p class="correction__heading">Correctional (Target {{target}})</p>
                     <div class="result-wrapper">
                         <p class="dosage__result--correctionOneDP">{{correctionResultOneDP}}</p>
                         <p class="dosage__unit">IU</p>
                     </div>
                     <p class="dosage__result--correction">{{correctionResult}} (rounded)</p>
-
-                    <p class="ratio__heading">Ratio ({{carbRatio.view}})</p>
-                    <div class="result-wrapper">
-                        <p class="dosage__result--ratioOneDP">{{ratioResultOneDP}}</p>
-                        <p class="dosage__unit">IU</p>
-                    </div>
-                    <p class="dosage__result--ratio">{{ratioResult}} (rounded)</p>
                 </div>
 
                 <div class="total">

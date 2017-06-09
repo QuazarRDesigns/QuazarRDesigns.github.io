@@ -31,11 +31,12 @@
         <button class="add-carb background--green" ng-click="addToList()">+</button>
 
         <div class="carb-total">
-            <p class="carb-total__total">{{result}}</p><p class="carb-total__unit">{{carbUnit.name}}</p>
+          <p class="carb-total__total">{{result}}</p><p class="carb-total__unit">{{carbUnit.name}}</p>
+          <button class="carb-total__send background--green" ng-click="calculateDosage()">Calculate Dosage</button>
         </div>
 
         <ul class="carb-list">
-            <li ng-repeat="x in list track by $index" class="carb-list__item"><span class="carb-list__remove" ng-click="remove(item)">-</span>{{x.name}}<span class="carb-list__amount">{{x.amounts.key}}</span></li>
+            <li ng-repeat="x in list track by $index" class="carb-list__item"><span class="carb-list__remove" ng-click="remove(item)">x</span>{{x.name}}<span class="carb-list__amount">{{x.amounts.key}}</span></li>
         </ul>
     </main>
 </body>

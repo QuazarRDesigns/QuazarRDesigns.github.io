@@ -46,7 +46,7 @@
             
             <fieldset class="settings__fieldset settings__fieldset--correction">
                 <h2 class="setting__heading">Correction Factor</h2>
-                <input class='carb-ratio__inputs' type="number" ng-model='correctionFactor'/>
+                <input class='carb-ratio__inputs' type="number" step="0.1" ng-model='correctionFactor'/><p class="glucose__unit">(100 &divide; Total Daily Insulin)</p>
             </fieldset>
             
             <input class="settings__submit background--green" type="submit" value="Submit">
