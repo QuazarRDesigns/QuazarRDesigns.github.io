@@ -1,4 +1,4 @@
-var CACHE_NAME = 'carbcounter-cache-v1 ';
+var CACHE_NAME = 'carbcounter-cache-v0.3';
 var urlsToCache = [
     'index.html',
     'https://fonts.googleapis.com/css?family=Montserrat:400,700',

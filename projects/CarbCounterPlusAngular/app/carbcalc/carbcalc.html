@@ -24,11 +24,19 @@
     <main class="carbcalc">
         <h1 class="carbcalc__heading">Carb Calculator</h1>
         <div class="carb-select">
-            <select class="carb-select__select" ng-model="carbselect" ng-options="carb as carb.name for carb in carbs" ng-change="getAmounts()"></select>
-            <select class="carb-select__amount" ng-model="carbamount" ng-options="amount as amount.key for amount in amounts"></select>
+            <select class="carb-select__category" ng-hide="customcarb" ng-model="categoryselect" ng-options="category as category.name for category in categories" ng-change="getCarbs()">
+              <option value="">Select a category or enter a custom value below</option>
+            </select>
+          <select class="carb-select__select" ng-show="categoryselect" ng-model="carbselect" ng-options="carb as carb.name for carb in carbs" ng-change="getAmounts()">
+            <option value="">Select a Carb</option>
+          </select>
+          <select class="carb-select__amount" ng-show="carbselect" ng-model="carbamount" ng-options="amount as amount.key for amount in amounts">
+            <option value="">Select an Amount</option>
+          </select>
+          <input type="number" ng-hide="categoryselect" ng-model="customcarb">
         </div>
 
-        <button class="add-carb background--green" ng-click="addToList()">+</button>
+        <button class="add-carb background--green" ng-click="addToList()">Add to list</button>
 
         <div class="carb-total">
           <p class="carb-total__total">{{result}}</p><p class="carb-total__unit">{{carbUnit.name}}</p>
