@@ -110,7 +110,7 @@ angular.module('myApp.carbcalc', ['ngRoute'])
                 $scope.list.push(temp);
                 temp = "";
                 $scope.updateResult();
-              } else {
+              } else if ($scope.customcarb !== 0 && $scope.customcarb !== undefined && $scope.customcarb !== null) {
                 var temp = $.extend(true, {}, []);
                 temp.amounts = {
                   key: $scope.customcarb + 'g',
