@@ -380,23 +380,24 @@ fieldset {
     width: 83.33%;
 }
 
-.carb-select__select {
+.carb-select__category {
     font-size: 1em;
     height: 1.3em;
-    margin-bottom: 1.25em;
 }
 
-.carb-select__amount {
+.carb-select__amount, .carb-select__select {
     font-size: 1em;
     height: 1.3em;
+    margin-top: 0.5em;
 }
 
 .add-carb {
-    font-size: 2em;
-    height: 1.5em;
+    font-size: 1em;
+    height: 3em;
     margin:16px 0 16px 0;
     margin: 1rem 0 1rem 0;
-    width: 40%;
+    padding: 0 1em;
+    min-width: 15%;
 }
 
 .carb-list {
