@@ -1,0 +1,195 @@
+.dosecalc {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  font-size: 1.1em;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.625em;  
+}
+
+.dosecalc__heading {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.glucose, .carb {
+  background: #fff;
+  padding: 0.625em;
+  margin-bottom: 0.625em;
+  width: 83.33%;
+}
+
+.glucose__heading {
+  color: #05baf0;
+  font-size: 1.2em;
+  margin-bottom: 0.3125em;
+}
+
+.carb__heading {
+  color: #3d994a;
+  font-size: 1.2em;
+  margin-bottom: 0.3125em;
+}
+
+.glucose__input-wrapper, .carb__input-wrapper { 
+  -webkit-box-align: end; 
+  -ms-flex-align: end; 
+  align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.glucose__input, .carb__input {
+  font-size: 1em;
+}
+
+.glucose__unit, .carb__unit {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: 0.5em;
+}
+
+.dosage {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.625em;
+  width: 83.33%;
+}
+
+.dosage-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex: 1 0;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+.dosage__heading {    
+  color: #e33663;
+  font-size: 1.2em;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 0.3125em;
+}
+
+.ratio__heading{
+  color: #3d994a;
+  margin-bottom: -0.375em;
+  margin-top: 1em;
+}
+
+.dosage__result--ratioOneDP {
+  color: #3d994a;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.correction__heading {
+  color: #05baf0;
+  margin-bottom: -0.375em;
+}
+
+.dosage__result--correctionOneDP {
+  color: #05baf0;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.dosage__result--ratio, .dosage__result--correction {
+  font-size: 0.6em;
+}
+
+.total__heading {
+  color: #e33663;
+  margin-bottom: -0.375em;
+  margin-top: 1em;
+}
+
+.dosage__result--totalOneDP {
+  color: #e33663;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.dosage__unit {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.result-wrapper {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.total-wrapper {
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.dosage__result--total {
+  font-size: 0.6em;
+}
+
+@media only screen and (min-width: 512px) {
+  
+  .dosage-wrapper {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+  }
+
+  .results-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin-right: 1em;
+  }
+
+  .total {
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  .dosage__result--total {
+    text-align: center;
+  }
+
+}

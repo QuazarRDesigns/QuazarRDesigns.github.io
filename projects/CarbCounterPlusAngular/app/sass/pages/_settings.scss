@@ -1,0 +1,126 @@
+.settings {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.625em; 
+}
+
+.settings__heading {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.settings__form {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 83.33%;
+}
+
+.setting__heading {
+  font-size: 1.2em;
+}
+
+  .settings__fieldset {
+  margin-bottom: 0.625em;
+}
+
+.carb-ratio__inputs {
+  display: inline-block;
+  height: 1.5em;
+  margin: 0.625em;
+  min-width: 3em;
+  max-width: 35%;
+}
+
+.settings__submit {
+  color: #fff;
+  display: block;
+  height: 3em;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.settings__submit:hover {
+  outline: 1px solid #000;
+}
+
+.settings__submit:focus {
+  background: #3d994a;
+}
+
+@media only screen and (min-width: 1024px) {
+  
+  .settings__form {
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+   
+  .settings__fieldset--carbratio {
+    -webkit-box-flex: 2;
+    -ms-flex: 2 1 15em;
+    flex: 2 1 15em;
+    margin-right: 0.625em;
+  }
+
+  .settings__fieldset--carbunit {
+    -webkit-box-flex: 2;
+    -ms-flex: 2 1 15em;
+    flex: 2 1 15em;
+    margin-right: 0.625em;
+  }
+  .settings__fieldset--BGunit {
+    -webkit-box-flex: 2;
+    -ms-flex: 2 1 15em;
+    flex: 2 1 15em;
+    margin-right: 0.625em;
+  }
+
+  .settings__fieldset--target {
+    -webkit-box-flex: 2;
+    -ms-flex: 2 1 15em;
+    flex: 2 1 15em;
+    margin-right: 0.625em;
+  }
+
+  .settings__fieldset--correction {
+    -webkit-box-flex: 2;
+    -ms-flex: 2 1 100%;
+    flex: 2 1 100%;
+    margin-right: 0.625em;
+  }
+
+  .settings__submit {
+    width: 100%;
+    margin: 0 40%;
+    min-width: 10em;
+  }
+  
+}
