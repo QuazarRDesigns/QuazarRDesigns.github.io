@@ -27,6 +27,8 @@ angular.module('myApp.settings', ['ngRoute'])
                 
                 $scope.target = 6.5;
                 
+                $scope.correctionNum = 100;
+                
                 $scope.correctionFactor = 2.0;
                 
                 if (typeof (Storage) !== "undefined") {
@@ -101,9 +103,11 @@ angular.module('myApp.settings', ['ngRoute'])
                 $scope.convertTarget = function () {
                     if ($scope.BGUnit.value === 18) {
                         $scope.target = $scope.target * 18;
+                        $scope.correctionNum = $scope.correctionNum * 18;
                     } else {
                         if ($scope.target !== 6) {
                             $scope.target = $scope.target / 18;
+                            $scope.correctionNum = $scope.correctionNum / 18;
                         }
                     }
                     $scope.target = Math.round($scope.target * 10) / 10;

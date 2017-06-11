@@ -113,11 +113,11 @@ angular.module('myApp.carbcalc', ['ngRoute'])
               } else if ($scope.customcarb !== 0 && $scope.customcarb !== undefined && $scope.customcarb !== null) {
                 var temp = $.extend(true, {}, []);
                 temp.amounts = {
-                  key: $scope.customcarb + 'g',
+                  key: $scope.customcarb + $scope.carbUnit.name,
                   value: 1
                 };
                 temp.carb = $scope.customcarb;
-                temp.name = 'Custom Entry';
+                temp.name = $scope.customcarbname ? $scope.customcarbname :'Custom Entry';
                 $scope.list.push(temp);
                 temp = "";
                 $scope.updateResult();
