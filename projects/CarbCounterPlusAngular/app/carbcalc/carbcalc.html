@@ -27,7 +27,7 @@
       <select class="carb-select__category" ng-hide="customcarb" ng-model="categoryselect" ng-options="category as category.name for category in categories" ng-change="getCarbs()">
         <option value="">Select a category</option>
       </select>
-      <select class="carb-select__select" ng-show="categoryselect" ng-model="carbselect" ng-options="carb as carb.name for carb in carbs" ng-change="getAmounts()">
+      <select class="carb-select__select" ng-show="categoryselect" ng-model="carbselect" ng-options="carb as carb.name group by carb.variant for carb in carbs" ng-change="getAmounts()">
         <option value="">Select a Carb</option>
       </select>
       <select class="carb-select__amount" ng-show="carbselect" ng-model="carbamount" ng-options="amount as amount.key for amount in amounts">
@@ -45,7 +45,7 @@
     </div>
 
     <ul class="carb-list">
-      <li ng-repeat="x in list track by $index" class="carb-list__item"><span class="carb-list__remove" ng-click="remove(item)">X</span>{{x.name}}<span class="carb-list__amount">{{x.amounts.key}}</span></li>
+      <li ng-repeat="x in list track by $index" class="carb-list__item"><span class="carb-list__remove" ng-click="remove(x)">X</span>{{x.name}}<span class="carb-list__amount">{{x.amounts.key}}</span></li>
     </ul>
   </main>
 </body>
