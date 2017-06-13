@@ -1,9 +1,11 @@
 *, *:before, *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0; }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   height: 100vh; }
@@ -13,6 +15,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   min-height: 100vh; }
@@ -66,25 +70,13 @@ fieldset {
   background: #e33663; }
 
 /***************************/
-/*
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-*/
 .app-wrapper {
   display: inherit;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   font-size: 1em; }
@@ -105,6 +97,8 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   -webkit-box-pack: center;
@@ -121,6 +115,8 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
@@ -167,8 +163,9 @@ fieldset {
   .top__top {
     -webkit-box-align: center;
     -ms-flex-align: center;
-    -ms-grid-row-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
     height: 100%;
@@ -190,8 +187,9 @@ fieldset {
   .top__top {
     -webkit-box-align: center;
     -ms-flex-align: center;
-    -ms-grid-row-align: center;
     align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     height: 100%; }
@@ -205,6 +203,8 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   -ms-flex-pack: distribute;
@@ -302,6 +302,8 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   -webkit-box-flex: 1;
@@ -314,6 +316,8 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   -webkit-box-flex: 4;
@@ -331,6 +335,8 @@ fieldset {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   -webkit-box-pack: center;
@@ -357,6 +363,8 @@ fieldset {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   margin-top: 1.875em;
@@ -384,6 +392,8 @@ fieldset {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   -webkit-box-pack: center;
@@ -407,6 +417,8 @@ fieldset {
 
 @media only screen and (min-width: 30em) {
   .mainmenu__main-links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap; }
   .mainmenu__carb {
@@ -432,8 +444,6 @@ fieldset {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -472,6 +482,8 @@ fieldset {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   margin-top: 16px;
@@ -518,12 +530,16 @@ fieldset {
   margin-left: 0.625em; }
 
 .carb-total {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background: #fff;
   color: #05baf0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   font-size: 3em;
@@ -566,6 +582,8 @@ fieldset {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   font-size: 1.1em;
@@ -622,6 +640,8 @@ fieldset {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   -webkit-box-pack: justify;
@@ -634,7 +654,11 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0;
   flex: 1 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap; }
 
@@ -705,13 +729,19 @@ fieldset {
 
 @media only screen and (min-width: 512px) {
   .dosage-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify; }
+    flex-flow: row nowrap; }
   .results-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-right: 1em; }
   .total {
@@ -732,6 +762,8 @@ fieldset {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   -webkit-box-pack: justify;
@@ -753,6 +785,8 @@ fieldset {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   -webkit-box-pack: justify;
@@ -793,6 +827,8 @@ fieldset {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap; }
   .settings__fieldset--carbratio {

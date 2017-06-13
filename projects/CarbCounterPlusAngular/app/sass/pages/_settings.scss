@@ -1,17 +1,8 @@
 .settings {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
+  display: flex;  
   flex: 1;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  flex-flow: column nowrap;  
   justify-content: space-between;
   margin-bottom: 0.625em; 
 }
@@ -21,20 +12,11 @@
   text-align: center;
 }
 
-.settings__form {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.settings__form { 
   align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 83.33%;
 }
@@ -74,45 +56,31 @@
 @media only screen and (min-width: 1024px) {
   
   .settings__form {
-    -ms-flex-line-pack: distribute;
     align-content: space-around;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
    
-  .settings__fieldset--carbratio {
-    -webkit-box-flex: 2;
-    -ms-flex: 2 1 15em;
+  .settings__fieldset--carbratio {  
     flex: 2 1 15em;
     margin-right: 0.625em;
   }
 
-  .settings__fieldset--carbunit {
-    -webkit-box-flex: 2;
-    -ms-flex: 2 1 15em;
+  .settings__fieldset--carbunit {  
     flex: 2 1 15em;
     margin-right: 0.625em;
   }
-  .settings__fieldset--BGunit {
-    -webkit-box-flex: 2;
-    -ms-flex: 2 1 15em;
+  .settings__fieldset--BGunit {   
     flex: 2 1 15em;
     margin-right: 0.625em;
   }
 
-  .settings__fieldset--target {
-    -webkit-box-flex: 2;
-    -ms-flex: 2 1 15em;
+  .settings__fieldset--target {    
     flex: 2 1 15em;
     margin-right: 0.625em;
   }
 
-  .settings__fieldset--correction {
-    -webkit-box-flex: 2;
-    -ms-flex: 2 1 100%;
+  .settings__fieldset--correction {   
     flex: 2 1 100%;
     margin-right: 0.625em;
   }
