@@ -1,14 +1,13 @@
-var CACHE_NAME = 'carbcounter-cache-v0.3.1';
+var CACHE_NAME = 'carbcounter-cache-v0.3.2';
 var urlsToCache = [
   'index.html',
   'https://fonts.googleapis.com/css?family=Montserrat:400,700',
   'bower_components/html5-boilerplate/dist/css/normalize.css',
-  'bower_components/html5-boilerplate/dist/css/main.css',
   'app.css',
   'bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js',
   'bower_components/angular/angular.js',
   'bower_components/angular-route/angular-route.js',
-  'app.js',
+  'build/css/app.min.css',
   'core/core.js',
   'carbcalc/carbcalc.js',
   'dosecalc/dosecalc.js',
