@@ -1,17 +1,18 @@
-var modal = document.querySelector(".modal");
-var modalOverlay = document.querySelector(".modal-overlay");
-var portfolioItem = document.querySelector(".portfolio__item");
-var modalTitle = document.querySelector(".modal-aside__title");
-var modalDescription = document.querySelector(".modal-aside__description");
-var modalLink = document.querySelector(".modal-aside__link");
-var modalImg = document.querySelector(".modal__img");
-var portfolioItems = {
+var modal = document.querySelector(".modal"),
+modalOverlay = document.querySelector(".modal-overlay"),
+modalClose = document.querySelector(".modal-close"),
+portfolioItem = document.querySelector(".portfolio__item"),
+modalDescription = document.querySelector(".modal-aside__description"),
+modalLink = document.querySelector(".modal-aside__link"),
+modalImg = document.querySelector(".modal__img"),
+portfolioItems = {
   "portfolio__item--1": {
     "title": "CarbCounter+ PWA",
-    "description": "CarbCounter+ is a PWA (Progressive Web App) which I made to \n\
-benefit myself with the ability to help others.\n\ \n\
-The app is for people who are insulin dependent who count carbs and use a insulin \n\
-to carb ratio to determine their dosages.",
+    "description": `CarbCounter+ is a PWA (Progressive Web App) that I created
+    to help myself to more accurately calculate my carb intake and insulin dosages
+    and added some settings so it can be set up to help more people than just myself.
+    <br/>
+    I used AngularJS to build for Angular's simple data binding and instant updating of values.`,
     "link": "https://quazarrdesigns.github.io/projects/CarbCounterPlusAngular/app/index.html",
     "images": [
       {
@@ -58,14 +59,15 @@ to carb ratio to determine their dosages.",
   }
 };
 
-modalOverlay.addEventListener("click", function () {
+modalOverlay.addEventListener("click", function (evt) {
+ if (evt.target === modalOverlay || evt.target === modalClose) {
   modal.classList.toggle("closed");
   modalOverlay.classList.toggle("closed");
+ }
 });
 
 portfolioItem.addEventListener("click", function (evt) {
   var item = evt.target.classList[1];
-  modalTitle.innerHTML = portfolioItems[item].title;
   modalDescription.innerHTML = portfolioItems[item].description;
   modalLink.href = portfolioItems[item].link;
   modalImg.src = portfolioItems[item].images[0].src;

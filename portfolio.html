@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
     <link rel="icon" type="image/x-icon" sizes="48x48" href="favicons/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
 
@@ -27,18 +27,22 @@
       </ul>
     </nav>
     <main class="portfolio">
-      <h1 class="portfolio-section__heading">Web</h1>
       <div class="portfolio-section">
-        <div class="portfolio__item portfolio__item--1"></div>
-        <a class="portfolio__item portfolio__item--2" target="_blank" href="http://matthew.rayner.yoobee.net.nz/WE06/WE06_App/www/index.html#!/modules/login"><div></div></a>
-        <a class="portfolio__item portfolio__item--3" target="_blank" href="./projects/FTTL/index.html"><div></div></a>
+        <svg class="portfolio__section-label" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 80"><defs><style>.cls-1{fill:#2d2d2d;}.cls-2{font-size:37.81px;fill:#fff;font-family:Montserrat-SemiBold, Montserrat;font-weight:700;}</style></defs><title>portfolio__section-label</title><rect class="cls-1" x="-0.3" y="54.8" width="100%" height="25"/><polygon class="cls-1" points="-0.3 79.7 -0.3 -0.3 351 -0.3 431.5 79.7 -0.3 79.7"/><text class="cls-2" transform="translate(14.6 52.8)">WEB</text></svg>
+        <div class="portfolio-items">
+          <div class="portfolio__item portfolio__item--1"></div>
+          <a class="portfolio__item portfolio__item--2" target="_blank" href="http://matthew.rayner.yoobee.net.nz/WE06/WE06_App/www/index.html#!/modules/login"><div></div></a>
+          <a class="portfolio__item portfolio__item--3" target="_blank" href="./projects/FTTL/index.html"><div></div></a>
+        </div>
       </div>
-      <h1 class="portfolio-section__heading">Graphic Design</h1>
       <div class="portfolio-section">
-        <a class="portfolio__item portfolio__item--4" target="_blank" href="./projects/SAB_brand_identity.pdf"><div></div></a>
-        <a class="portfolio__item portfolio__item--5" target="_blank" href="./projects/EECA_ad_campaign.pdf"><div></div></a>
-        <a class="portfolio__item portfolio__item--6" target="_blank" href="./projects/NZSci_magazine.pdf"><div></div></a>
-        <a class="portfolio__item portfolio__item--7" target="_blank" href="./projects/KITK_brochure.pdf"><div></div></a>
+        <svg class="portfolio__section-label" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 80"><defs><style>.cls-1{fill:#2d2d2d;}.cls-2{font-size:37.81px;fill:#fff;font-family:Montserrat-SemiBold, Montserrat;font-weight:700;}</style></defs><title>portfolio__section-label</title><rect class="cls-1" x="-0.3" y="54.8" width="100%" height="25"/><polygon class="cls-1" points="-0.3 79.7 -0.3 -0.3 351 -0.3 431.5 79.7 -0.3 79.7"/><text class="cls-2" transform="translate(14.6 52.8)">GRAPHIC DESIGN</text></svg>
+        <div class="portfolio-items">
+          <a class="portfolio__item portfolio__item--4" target="_blank" href="./projects/SAB_brand_identity.pdf"><div></div></a>
+          <a class="portfolio__item portfolio__item--5" target="_blank" href="./projects/EECA_ad_campaign.pdf"><div></div></a>
+          <a class="portfolio__item portfolio__item--6" target="_blank" href="./projects/NZSci_magazine.pdf"><div></div></a>
+          <a class="portfolio__item portfolio__item--7" target="_blank" href="./projects/KITK_brochure.pdf"><div></div></a>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -56,11 +60,24 @@
       </div>
     </footer>
     <div class="modal-overlay closed">
+      <span class="modal-close">X</span>
+      <svg class="modal-label" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 80" preserveAspectRatio="xMinYMin meet"><defs><style>.cls-1{fill:#2d2d2d;}</style></defs><title>portfolio__section-label</title><rect class="cls-1" x="-0.3" y="54.8" width="2000" height="25"/><polygon class="cls-1" points="-0.3 79.7 -0.3 -0.3 351 -0.3 431.5 79.7 -0.3 79.7"/><text class="modal-label__text" transform="translate(14.6 52.8)">CarbCounter+ PWA</text></svg>
       <div class="modal closed">
         <img class="modal__img" src="" alt="" />
         <div class="modal-aside">
-          <h1 class="modal-aside__title">Modal Title</h1>
           <p class="modal-aside__description">Modal Description</p>
+          <div class="modal-aside__features">
+            <h2>Features</h2>
+            <ul class="modal-aside__feature-list">
+              <li>Carbohydrate calculator</li>
+              <li>Doseage calculator</li>
+              <li>Set carb unit CU, BU, and g</li>
+              <li>Set blood glucose unit mmol/l, and mg/dl</li>
+              <li>Set correction factor</li>
+              <li>Set target BG level</li>
+              <li>Set carb to insulin ratio</li>
+            </ul>
+          </div>
           <a class="modal-aside__link" target="_blank" href="">Link to Work</a>
         </div>
       </div>

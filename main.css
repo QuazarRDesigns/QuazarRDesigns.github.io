@@ -124,75 +124,143 @@ html {
 .modal-overlay{
   align-items: center;
   display: flex;
-  background: rgba(30, 12, 2, 0.4);
+  background: rgba(30, 12, 2, 0.8);
+  flex-flow: column nowrap;
   position: fixed;
   height: 100%;
-  justify-content: center;
+  justify-content: flex-end;
   left: 0;
   top: 0;
   width: 100%;
   z-index: 2;
 }
 
+.modal-close {
+  align-self: flex-end;
+  color: #fff;
+  font-size: 5vh;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.modal-close:hover {
+  color: #bbb;
+  cursor: pointer;
+}
+
+.modal-label {
+  max-height: 10vh;
+  min-height: 50px;
+}
+
+.modal-label__text {
+  font-size:35.81px;
+  fill:#fff;
+  font-family:Montserrat-SemiBold, Montserrat;
+  font-weight:700;
+}
+
 .modal {
   background: #f29420;
   display: flex;
-  height: 80vh;
+  flex: 0 1 auto;
+  flex-flow: column nowrap;
+  height: 90vh;
+  overflow-y: auto;
   padding: 0.5em;
-  width: 80vw;
+  width: 100%;
 }
 
 .modal__img {
-  height: 100%;
-  margin-right: 0.5em;
-  width: 60%;
+  display: block;
+  max-height: 50vh;
+  object-fit: contain;
+  width: 100%;
 }
 
 .modal-aside {
-  flex: 1 0;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  position: relative;
 }
+
+.modal-aside__description {
+}
+
+.modal-aside__features {
+  align-self: flex-start;
+  margin-top: 1em;
+}
+
+.modal-aside__feature-list {
+}
+
+.modal-aside__link {
+  display: inline-block;
+  background: #2d2d2d;
+  bottom: 0;
+  color: #fff;
+  margin-top: 1em;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+}
+
 /** Portfolio Styles
 */
 
-.portfolio {;
-            padding: 0.5em;
+.portfolio {
+  padding: 0.5em;
 }
-.portfolio-section__heading {
-  display: block;
+.portfolio__section-label {
+  height: 80px;
+  transform: translateY(1px);
 }
 
 .portfolio-section {
   display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 1em;
+}
+
+.portfolio-items {
+  border: 0.5em solid #2d2d2d;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .portfolio__item {
   background: #2d2d2d;
+  cursor: pointer;
   flex: 1 0;
   height: 150px;
-  margin: 0.5em;
   min-width: 200px;
   position: relative;
+  overflow: hidden;
 }
 
 .portfolio__item:after {
+  align-items: center;
   background: rgba(45, 45, 45, 0.9);
-  bottom: 0;
+  left: -100%;
   color: #fff;
-  display: block;
+  display: flex;
   font-size: 1.5em;
-  line-height: 1.2em;
-  max-height: 0;
+  justify-content: center;
+  height: 100%;
   overflow: hidden;
-  padding: 0 0.2em;
   position: absolute;
+  transition: left 800ms ease-out;
   text-align: center;
-  transition: max-height 800ms;
   width: 100%;
 }
 
 .portfolio__item:hover:after,
 .portfolio__item:focus:after {
-  max-height: 4em;
+  left: 0;
 }
 
 .portfolio__item--1 {
@@ -313,17 +381,69 @@ html {
   .menu {
     padding: 1em 1em 0em 1em;
   }
+  
   .menu__item {
     display: inline-block;
     text-align: center;
     margin: 0;
     width: 100px;
   }
+
+  .modal-label__text {
+    font-size: 35.81px;
+  }
+  
+  .modal {
+    
+  }
+
+  .modal-aside {
+    overflow-y: auto;
+  }
+  
   .portfolio {
     margin: 0 15%;
   }
+
+  .portfolio-items {
+    flex-flow: row wrap;
+  }
+
   .portfolio__item--1 {
     background: url(img/portfolio/carbcounter_desktop.png) top center no-repeat;
     background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  
+  .modal-overlay {
+    justify-content: center;
+  }
+  
+  .modal-label {
+    height: 80vh;
+    width: 80vw;
+  }
+  
+  .modal {
+    flex-flow: row nowrap;
+    height: 80vh;
+    width: 80vw;
+  }
+  
+  .modal__img {
+    flex: 1 0 auto;
+    height: 100%;
+    max-height: none;
+    max-width: 500px;
+  }
+  
+  .modal-aside {
+    margin: 1em;
+  }
+   
+  .modal-aside__link {
+    width: 80%;
   }
 }
