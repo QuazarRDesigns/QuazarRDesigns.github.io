@@ -180,7 +180,7 @@ angular.module('myApp.carbcalc', ['ngRoute'])
                 var add = $scope.list[m].carb * $scope.list[m].amounts.value;
                 sum = sum + add;
               }
-              $scope.result = Math.round(sum / $scope.carbUnit.value * 100) / 100;
+              $scope.result = Math.round(sum / $scope.carbUnit.value * 10) / 10;
             };
 
             $scope.getCarbs = function () {
