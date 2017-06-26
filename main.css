@@ -313,7 +313,7 @@ html {
 }
 
 .portfolio__item--4 {
-  background: url(img/portfolio/SAB_business_card.png) center -5px no-repeat;
+  background: url(img/portfolio/sab_businesscard.png) left center no-repeat;
   background-size: cover;
 }
 
@@ -322,7 +322,7 @@ html {
 }
 
 .portfolio__item--5 {
-  background: url(img/portfolio/EECA_billboard.png) center -5px no-repeat;
+  background: url(img/portfolio/EECA_billboard.png) left center no-repeat;
   background-size: cover;
 }
 
@@ -331,7 +331,7 @@ html {
 }
 
 .portfolio__item--6 {
-  background: url(img/portfolio/NZSci_Magazine.png) center -5px no-repeat;
+  background: url(img/portfolio/NZSci_Magazine.png) left center no-repeat;
   background-size: cover;
 }
 
@@ -340,12 +340,21 @@ html {
 }
 
 .portfolio__item--7 {
-  background: url(img/portfolio/KITK_brochure.png) center -5px no-repeat;
+  background: url(img/portfolio/KITK_brochure.png) left center no-repeat;
   background-size: cover;
 }
 
 .portfolio__item--7:after {
   content: "Kids in the Kitchen Brochure";
+}
+
+.portfolio__item--8 {
+  background: url(img/portfolio/qhs_logo.png) center no-repeat;
+  background-size: cover;
+}
+
+.portfolio__item--8:after {
+  content: "QHS Logo";
 }
 
 .footer {

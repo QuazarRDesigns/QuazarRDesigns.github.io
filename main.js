@@ -90,57 +90,72 @@ var modal = document.querySelector(".modal"),
             "link": "./projects/SAB_brand_identity.pdf",
             "images": [{
                 "desktop": [{
-                    "src": "",
-                    "alt": ""
+                    "src": "./img/modal/sab_businesscard.png",
+                    "alt": "SAB business card"
                   }],
                 "mobile": [{
-                    "src": "",
-                    "alt": ""
+                    "src": "./img/modal/sab_housestyle.png",
+                    "alt": "SAB house style guide"
                   }]
               }]
           },
           "portfolio__item--5": {
-            "title": "",
-            "description": ``,
-            "link": "",
+            "title": "EECA Ad Campaign",
+            "description": `Fictional advertising campaign for a scheme to switch to electric vehicles by EECA.`,
+            "link": "./projects/EECA_ad_campaign.pdf",
             "images": [{
                 "desktop": [{
-                    "src": "",
-                    "alt": ""
+                    "src": "./img/modal/eeca_billboard.png",
+                    "alt": "EECA ad campaign billboard"
                   }],
                 "mobile": [{
-                    "src": "",
-                    "alt": ""
+                    "src": "./img/modal/eeca_adshel.png",
+                    "alt": "EECA ad campaign adshel poster"
                   }]
               }]
           },
           "portfolio__item--6": {
-            "title": "",
-            "description": ``,
-            "link": "",
+            "title": "NZ Scientific Magazine",
+            "description": `Fictional magazine using articles from Mentalfloss.`,
+            "link": "./projects/NZSci_magazine.pdf",
             "images": [{
                 "desktop": [{
-                    "src": "",
-                    "alt": ""
+                    "src": "./img/modal/nzscimag_spread3.png",
+                    "alt": "Spread of NZ Scientific Magazine"
                   }],
                 "mobile": [{
-                    "src": "",
-                    "alt": ""
+                    "src": "./img/modal/nzscimag_cover.png",
+                    "alt": "Cover of NZ Scientific Magazine"
                   }]
               }]
           },
           "portfolio__item--7": {
-            "title": "",
-            "description": ``,
-            "link": "",
+            "title": "Kids in the Kitchen",
+            "description": `A fictional brochure encouraging children to learn to cook healthy food with their caregivers.`,
+            "link": "./projects/KITK_brochure.pdf",
             "images": [{
                 "desktop": [{
-                    "src": "",
-                    "alt": ""
+                    "src": "./img/modal/kitk_spread2.png",
+                    "alt": "Spread of the Kids in the Kitchen brochure"
                   }],
                 "mobile": [{
-                    "src": "",
-                    "alt": ""
+                    "src": "./img/modal/kitk_cover.png",
+                    "alt": "Cover of the Kids in the Kitchen brochure"
+                  }]
+              }]
+          },
+          "portfolio__item--8": {
+            "title": "Quality Heating Services",
+            "description": `An actual commercial logo I created for Quality Heating Services here in Christchurch.`,
+            "link": "./projects/QHS_Logo.pdf",
+            "images": [{
+                "desktop": [{
+                    "src": "./img/modal/qhs_logo.png",
+                    "alt": "Logo for Quality Heating Services"
+                  }],
+                "mobile": [{
+                    "src": "./img/modal/qhs_logo.png",
+                    "alt": "Logo for Quality Heating Services"
                   }]
               }]
           }
