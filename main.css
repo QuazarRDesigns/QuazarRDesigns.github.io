@@ -171,7 +171,6 @@ html {
 .modal {
   background: #f29420;
   display: flex;
-  flex: 0 1 auto;
   flex-flow: column nowrap;
   height: 90vh;
   overflow-y: auto;
@@ -180,17 +179,16 @@ html {
 }
 
 .modal__img {
-  display: block;
-  max-height: 50vh;
+  height: 70%;
+  margin-bottom: 1em;
   object-fit: contain;
-  width: 100%;
+  object-position: center top;
 }
 
 .modal-aside {
   align-items: center;
   display: flex;
   flex-flow: column;
-  position: relative;
 }
 
 .modal-aside__features {
@@ -207,7 +205,7 @@ html {
   background: #2d2d2d;
   bottom: 0;
   color: #fff;
-  margin-top: 1em;
+  margin: 1em 0 1em 0;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -297,7 +295,7 @@ html {
 }
 
 .portfolio__item--2 {
-  background: url(img/portfolio/ListCRM.png) top center no-repeat;
+  background: url(img/portfolio/list_crm_calllist_desktop.png) top center no-repeat;
   background-size: cover;
 }
 
@@ -417,16 +415,12 @@ html {
     font-size: 35.81px;
   }
 
-  .modal {
-
-  }
-
-  .modal-aside {
-    overflow-y: auto;
+  .modal__img {
+    height: 60%;
   }
 
   .portfolio {
-    margin: 0 15%;
+    margin: 0 10%;
   }
 
   .portfolio__section-label_text {
@@ -464,19 +458,21 @@ html {
 
   .modal {
     flex-flow: row nowrap;
-    height: 80vh;
+    min-height: 80vh;
     width: 80vw;
   }
 
   .modal__img {
-    flex: 1 0 auto;
     height: 100%;
+    margin-right: 1em;
     max-height: none;
-    max-width: 500px;
+    object-position: left center;
+    width: 70%;
   }
 
   .modal-aside {
-    margin: 1em;
+    align-self: center;
+    width: 30%;
   }
 
   .modal-aside__link {
