@@ -24,7 +24,7 @@
   <main class="carbcalc">
     <h1 class="carbcalc__heading">Carb Calculator</h1>
     <div class="carb-select">
-      <select class="carb-select__category" ng-hide="customcarb" ng-model="categoryselect" ng-options="category as category.name for category in categories" ng-change="getCarbs()">
+      <select class="carb-select__category" ng-hide="customcarb" ng-model="categoryselect" ng-options="category as category.name group by category.category for category in categories" ng-change="getCarbs()">
         <option value="">Select a category</option>
       </select>
       <select class="carb-select__select" ng-show="categoryselect" ng-model="carbselect" ng-options="carb as carb.name group by carb.variant for carb in carbs" ng-change="getAmounts()">

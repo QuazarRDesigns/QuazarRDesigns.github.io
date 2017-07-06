@@ -521,6 +521,7 @@ fieldset {
 .carb-list__remove {
   cursor: pointer;
   font-size: 2em;
+  margin-right: 0.625em;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

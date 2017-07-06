@@ -41,6 +41,7 @@ html {
 .navbar {
   background: #2d2d2d;
   box-shadow: 0px 10px 10px -5px rgba(30, 12, 2, 0.4);
+  margin-bottom: 1em;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -150,12 +151,18 @@ html {
 }
 
 .modal-label {
-  max-height: 10vh;
-  min-height: 50px;
+  display: flex;
+  max-height: 80px;
+  width: 100%;
+}
+
+.modal-label__tab {
+  fill:#2d2d2d;
+  min-width: 500px;
 }
 
 .modal-label__text {
-  font-size:35.81px;
+  font-size:20px;
   fill:#fff;
   font-family:Montserrat-SemiBold, Montserrat;
   font-weight:700;
@@ -164,7 +171,6 @@ html {
 .modal {
   background: #f29420;
   display: flex;
-  flex: 0 1 auto;
   flex-flow: column nowrap;
   height: 90vh;
   overflow-y: auto;
@@ -173,20 +179,16 @@ html {
 }
 
 .modal__img {
-  display: block;
-  max-height: 50vh;
+  height: 70%;
+  margin-bottom: 1em;
   object-fit: contain;
-  width: 100%;
+  object-position: center top;
 }
 
 .modal-aside {
   align-items: center;
   display: flex;
   flex-flow: column;
-  position: relative;
-}
-
-.modal-aside__description {
 }
 
 .modal-aside__features {
@@ -195,6 +197,7 @@ html {
 }
 
 .modal-aside__feature-list {
+  padding-left: 2em;
 }
 
 .modal-aside__link {
@@ -202,7 +205,7 @@ html {
   background: #2d2d2d;
   bottom: 0;
   color: #fff;
-  margin-top: 1em;
+  margin: 1em 0 1em 0;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -216,11 +219,24 @@ html {
   padding: 0.5em;
 }
 .portfolio__section-label {
+  display: flex;
   height: 80px;
-  transform: translateY(1px);
+  min-width: 100%;
+}
+
+.portfolio__section-label_tab {
+  min-width: 260px;
+}
+
+.portfolio__section-label_text {
+  font-size:20px;
+  fill:#fff;
+  font-family:Montserrat-SemiBold,Montserrat;
+  font-weight:700
 }
 
 .portfolio-section {
+  box-shadow: 0px 10px 10px -5px rgba(30, 12, 2, 0.4);
   display: flex;
   flex-flow: column nowrap;
   margin-bottom: 1em;
@@ -244,16 +260,17 @@ html {
 
 .portfolio__item:after {
   align-items: center;
-  background: rgba(45, 45, 45, 0.9);
+  background: rgba(242, 148, 32, 0.9);
   left: -100%;
   color: #fff;
   display: flex;
   font-size: 1.5em;
   justify-content: center;
   height: 100%;
+  opacity: 0.8;
   overflow: hidden;
   position: absolute;
-  transition: left 800ms ease-out;
+  transition: left 700ms ease-out, opacity 700ms ease-out;
   text-align: center;
   width: 100%;
 }
@@ -261,6 +278,11 @@ html {
 .portfolio__item:hover:after,
 .portfolio__item:focus:after {
   left: 0;
+  opacity: 1;
+}
+
+.portfolio__item:active:after {
+  background: rgba(45, 45, 45, 0.9);
 }
 
 .portfolio__item--1 {
@@ -273,7 +295,7 @@ html {
 }
 
 .portfolio__item--2 {
-  background: url(img/portfolio/ListCRM.png) top center no-repeat;
+  background: url(img/portfolio/list_crm_calllist_desktop.png) top center no-repeat;
   background-size: cover;
 }
 
@@ -291,7 +313,7 @@ html {
 }
 
 .portfolio__item--4 {
-  background: url(img/portfolio/SAB_business_card.png) center -5px no-repeat;
+  background: url(img/portfolio/sab_businesscard.png) left center no-repeat;
   background-size: cover;
 }
 
@@ -300,7 +322,7 @@ html {
 }
 
 .portfolio__item--5 {
-  background: url(img/portfolio/EECA_billboard.png) center -5px no-repeat;
+  background: url(img/portfolio/EECA_billboard.png) left center no-repeat;
   background-size: cover;
 }
 
@@ -309,7 +331,7 @@ html {
 }
 
 .portfolio__item--6 {
-  background: url(img/portfolio/NZSci_Magazine.png) center -5px no-repeat;
+  background: url(img/portfolio/NZSci_Magazine.png) left center no-repeat;
   background-size: cover;
 }
 
@@ -318,12 +340,21 @@ html {
 }
 
 .portfolio__item--7 {
-  background: url(img/portfolio/KITK_brochure.png) center -5px no-repeat;
+  background: url(img/portfolio/KITK_brochure.png) left center no-repeat;
   background-size: cover;
 }
 
 .portfolio__item--7:after {
   content: "Kids in the Kitchen Brochure";
+}
+
+.portfolio__item--8 {
+  background: url(img/portfolio/qhs_logo.png) center no-repeat;
+  background-size: cover;
+}
+
+.portfolio__item--8:after {
+  content: "QHS Logo";
 }
 
 .footer {
@@ -381,7 +412,7 @@ html {
   .menu {
     padding: 1em 1em 0em 1em;
   }
-  
+
   .menu__item {
     display: inline-block;
     text-align: center;
@@ -392,17 +423,17 @@ html {
   .modal-label__text {
     font-size: 35.81px;
   }
-  
-  .modal {
-    
+
+  .modal__img {
+    height: 60%;
   }
 
-  .modal-aside {
-    overflow-y: auto;
-  }
-  
   .portfolio {
-    margin: 0 15%;
+    margin: 0 10%;
+  }
+
+  .portfolio__section-label_text {
+    font-size:25px;
   }
 
   .portfolio-items {
@@ -416,33 +447,43 @@ html {
 }
 
 @media only screen and (min-width: 900px) {
-  
+
+  .portfolio__section-label_tab {
+    min-width: 360px;
+  }
+
+  .portfolio__section-label_text {
+    font-size:37px;
+  }
+
   .modal-overlay {
     justify-content: center;
   }
-  
+
   .modal-label {
     height: 80vh;
     width: 80vw;
   }
-  
+
   .modal {
     flex-flow: row nowrap;
-    height: 80vh;
+    min-height: 80vh;
     width: 80vw;
   }
-  
+
   .modal__img {
-    flex: 1 0 auto;
     height: 100%;
+    margin-right: 1em;
     max-height: none;
-    max-width: 500px;
+    object-position: left center;
+    width: 70%;
   }
-  
+
   .modal-aside {
-    margin: 1em;
+    align-self: center;
+    width: 30%;
   }
-   
+
   .modal-aside__link {
     width: 80%;
   }
