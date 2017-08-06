@@ -141,15 +141,15 @@ angular.module('myApp.carbcalc', ['ngRoute'])
               ]},
               /** Beverages, Alcoholic */
               {name: 'Beer', category:'Beverages, Alcoholic', carbs: [
-                {name: 'Beer, full-strength (5% alcohol by volume)', variant:'', carb: 0.5, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 1.0 standard drink)', value: 2.814}, {key: '1 regular bottle or can (330mL, 1.2 standard drink)', value: 3.317}, {key: '1 large can (440mL, 1.6 standard drink)', value: 4.422}, {key: '1 large glass (450mL, 1.7 standard drinks)', value: 4.523}, {key: '1 large bottle (500mL, 1.8 standard drink)', value: 5.025}]},
-                {name: 'Beer, high-strength (>5% alcohol by volume)', variant:'', carb: 0.7, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 1.3 standard drink)', value: 2.825}, {key: '1 regular bottle or can (330mL, 1.5 standard drink)', value: 3.33}, {key: '1 large can (440mL, 2.0 standard drink)', value: 4.44}, {key: '1 large glass (450mL, 2.1 standard drinks)', value: 4.541}, {key: '1 large bottle (500mL, 2.3 standard drink)', value: 5.045}]},
-                {name: 'Beer, low alcohol', variant:'', carb: 0.6, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 0.3 standard drinks)', value: 2.688}, {key: '1 regular bottle or can (330mL, 0.3 standard drinks)', value: 3.168}, {key: '1 large can (440mL, 0.4 standard drinks)', value: 4.224}, {key: '1 large glass (450mL, 0.4 standard drinks)', value: 4.32}, {key: '1 large bottle (500mL, 0.5 standard drinks)', value: 4.80}]},
-                {name: 'Beer, low-strength (2.5% alcohol by volume)', variant:'', carb: 0.2, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 0.6 standard drink)', value: 2.822}, {key: '1 regular bottle or can (330mL, 0.7 standard drink)', value: 3.326}, {key: '1 large can (440mL, 0.9 standard drink)', value: 4.435}, {key: '1 large glass (450mL, 0.9 standard drinks)', value: 4.536}, {key: '1 large bottle (500mL, 1.0 standard drink)', value: 5.04}]},
-                {name: 'Beer, mid-strength (4% alcohol by volume)', variant:'', carb: 0.3, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 0.9 standard drink)', value: 2.827}, {key: '1 regular bottle or can (330mL, 1.0 standard drink)', value: 3.32}, {key: '1 large can (440mL, 1.3 standard drink)', value: 4.426}, {key: '1 large glass (450mL, 1.4 standard drinks)', value: 4.527}, {key: '1 large bottle (500mL, 1.5 standard drink)', value: 5.03}]}
+                {name: 'full-strength (5% alcohol by volume)', variant:'', carb: 0.5, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 1.0 standard drink)', value: 2.814}, {key: '1 regular bottle or can (330mL, 1.2 standard drink)', value: 3.317}, {key: '1 large can (440mL, 1.6 standard drink)', value: 4.422}, {key: '1 large glass (450mL, 1.7 standard drinks)', value: 4.523}, {key: '1 large bottle (500mL, 1.8 standard drink)', value: 5.025}]},
+                {name: 'high-strength (>5% alcohol by volume)', variant:'', carb: 0.7, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 1.3 standard drink)', value: 2.825}, {key: '1 regular bottle or can (330mL, 1.5 standard drink)', value: 3.33}, {key: '1 large can (440mL, 2.0 standard drink)', value: 4.44}, {key: '1 large glass (450mL, 2.1 standard drinks)', value: 4.541}, {key: '1 large bottle (500mL, 2.3 standard drink)', value: 5.045}]},
+                {name: 'low alcohol', variant:'', carb: 0.6, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 0.3 standard drinks)', value: 2.688}, {key: '1 regular bottle or can (330mL, 0.3 standard drinks)', value: 3.168}, {key: '1 large can (440mL, 0.4 standard drinks)', value: 4.224}, {key: '1 large glass (450mL, 0.4 standard drinks)', value: 4.32}, {key: '1 large bottle (500mL, 0.5 standard drinks)', value: 4.80}]},
+                {name: 'low-strength (2.5% alcohol by volume)', variant:'', carb: 0.2, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 0.6 standard drink)', value: 2.822}, {key: '1 regular bottle or can (330mL, 0.7 standard drink)', value: 3.326}, {key: '1 large can (440mL, 0.9 standard drink)', value: 4.435}, {key: '1 large glass (450mL, 0.9 standard drinks)', value: 4.536}, {key: '1 large bottle (500mL, 1.0 standard drink)', value: 5.04}]},
+                {name: 'mid-strength (4% alcohol by volume)', variant:'', carb: 0.3, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 0.9 standard drink)', value: 2.827}, {key: '1 regular bottle or can (330mL, 1.0 standard drink)', value: 3.32}, {key: '1 large can (440mL, 1.3 standard drink)', value: 4.426}, {key: '1 large glass (450mL, 1.4 standard drinks)', value: 4.527}, {key: '1 large bottle (500mL, 1.5 standard drink)', value: 5.03}]}
               ]},
               {name: 'Cider', category:'Beverages, Alcoholic', carbs: [
-                {name: 'Cider, apple, (5% alcohol by volume)', variant:'', carb: 5.6, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 1.1 standard drinks)', value: 2.836}, {key: '1 regular bottle (330mL, 1.3 standard drinks)', value: 3.343}, {key: '1 large glass (450mL, 1.8 standard drinks)', value: 4.559}, {key: '1 large bottle (500mL, 2.0 standard drinks)', value: 5.065}]},
-                {name: 'Cider, sweet', variant:'', carb: 2.6, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 1.0 standard drinks)', value: 2.828}, {key: '1 regular bottle (330mL, 1.2 standard drinks)', value: 3.333}, {key: '1 large glass (450mL, 1.7 standard drinks)', value: 4.545}, {key: '1 large bottle (500mL, 1.9 standard drinks)', value: 5.05}]}
+                {name: 'apple, (5% alcohol by volume)', variant:'', carb: 5.6, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 1.1 standard drinks)', value: 2.836}, {key: '1 regular bottle (330mL, 1.3 standard drinks)', value: 3.343}, {key: '1 large glass (450mL, 1.8 standard drinks)', value: 4.559}, {key: '1 large bottle (500mL, 2.0 standard drinks)', value: 5.065}]},
+                {name: 'sweet', variant:'', carb: 2.6, amounts: [{key: '100g', value: 1}, {key: '1 small glass (280mL, 1.0 standard drinks)', value: 2.828}, {key: '1 regular bottle (330mL, 1.2 standard drinks)', value: 3.333}, {key: '1 large glass (450mL, 1.7 standard drinks)', value: 4.545}, {key: '1 large bottle (500mL, 1.9 standard drinks)', value: 5.05}]}
               ]},
               {name: 'Wine', category:'Beverages, Alcoholic', carbs: [
                 {name: 'Port, fortified', variant:'', carb: 12.3, amounts: [{key: '100g', value: 1}, {key: '1 small glass (100mL, 1.6 standard drinks)', value: 1.03}, {key: '1 average glass (150mL, 2.5 standard drinks)', value: 1.545}]},
@@ -574,10 +574,10 @@ angular.module('myApp.carbcalc', ['ngRoute'])
                 {name: 'Savoury, potato top, heated', variant: 'Savoury', carb: 21.3, amounts: [{key: '100g', value: 1}, {key: '1 savoury (2.8 x 5.6cm diameter)', value: 0.592}]}
               ]},
               {name: 'Pizza', category: 'Fast Food', carbs: [
-                {name: 'Pizza, Hawaiian, thick crust', variant: 'name', carb: 33.7, amounts: [{key: '100g', value: 1}, {key: '1 pizza (2.25 x 28.3cm diameter)', value: 7.42}]},
-                {name: 'Pizza, barbeque chicken, thick crust', variant: 'name', carb: 33.5, amounts: [{key: '100g', value: 1}, {key: '1 pizza (2.35 x 28.2cm diameter)', value: 7.15}]},
-                {name: 'Pizza, meat, thick crust', variant: 'name', carb: 33.3, amounts: [{key: '100g', value: 1}, {key: '1 pizza (2.35 x 27.8cm diameter)', value: 7}]},
-                {name: 'Pizza, supreme, thin crust, Pizza Hut', variant: 'name', carb: 22.9, amounts: [{key: '100g', value: 1}, {key: '1 pizza', value: 3.84}]}
+                {name: 'Hawaiian, thick crust', variant: 'name', carb: 33.7, amounts: [{key: '100g', value: 1}, {key: '1 pizza (2.25 x 28.3cm diameter)', value: 7.42}]},
+                {name: 'barbeque chicken, thick crust', variant: 'name', carb: 33.5, amounts: [{key: '100g', value: 1}, {key: '1 pizza (2.35 x 28.2cm diameter)', value: 7.15}]},
+                {name: 'meat, thick crust', variant: 'name', carb: 33.3, amounts: [{key: '100g', value: 1}, {key: '1 pizza (2.35 x 27.8cm diameter)', value: 7}]},
+                {name: 'supreme, thin crust, Pizza Hut', variant: 'name', carb: 22.9, amounts: [{key: '100g', value: 1}, {key: '1 pizza', value: 3.84}]}
               ]},
               {name: 'Thai', category: 'Fast Food', carbs: [
                 {name: 'Beef salad, takeaway', variant:'Beef', carb: 7.1, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.14}]},
@@ -771,44 +771,44 @@ angular.module('myApp.carbcalc', ['ngRoute'])
                 {name: 'Chicken, nugget, crumbed, deep fried', variant: 'Chicken', carb: 14.5, amounts: [{key: '100g', value: 1}, {key: '1 nugget (5.5 x 3.6 x 1.5cm)', value: 0.175}]}
               ]},
               {name: 'Frozen Meal', category: 'Meat Products', carbs: [
-                {name: 'Frozen meal, roast beef with mashed potato & vegetables, microwaved, Wattie\'s', variant: 'Frozen meal', carb: 12.7, amounts: [{key: '100g', value: 1}, {key: '1 single meal', value: 4.253}]},
-                {name: 'Frozen meal, roast beef with roast potato & vegetables, microwaved', variant: 'Frozen meal', carb: 12.7, amounts: [{key: '100g', value: 1}, {key: '1 single meal', value: 3.953}]},
-                {name: 'Frozen meal, roast lamb with roast potato & vegetables, microwaved', variant: 'Frozen meal', carb: 8.8, amounts: [{key: '100g', value: 1}, {key: '1 single meal', value: 3.835}]},
-                {name: 'Frozen meal, roast pork with mashed potato & vegetables, microwaved, Wattie\'s', variant: 'Frozen meal', carb: 10.8, amounts: [{key: '100g', value: 1}, {key: '1 single meal', value: 4.402}]}
+                {name: 'roast beef with mashed potato & vegetables, microwaved, Wattie\'s', variant: 'Frozen meal', carb: 12.7, amounts: [{key: '100g', value: 1}, {key: '1 single meal', value: 4.253}]},
+                {name: 'roast beef with roast potato & vegetables, microwaved', variant: 'Frozen meal', carb: 12.7, amounts: [{key: '100g', value: 1}, {key: '1 single meal', value: 3.953}]},
+                {name: 'roast lamb with roast potato & vegetables, microwaved', variant: 'Frozen meal', carb: 8.8, amounts: [{key: '100g', value: 1}, {key: '1 single meal', value: 3.835}]},
+                {name: 'roast pork with mashed potato & vegetables, microwaved, Wattie\'s', variant: 'Frozen meal', carb: 10.8, amounts: [{key: '100g', value: 1}, {key: '1 single meal', value: 4.402}]}
               ]},
               {name: 'Pate', category: 'Meat Products', carbs: [
-                {name: 'Pate, chicken liver', variant: 'chicken liver', carb: 1.6, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.14}]},
-                {name: 'Pate, pork liver', variant: 'pork liver', carb: 0.8, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.14}]}
+                {name: 'chicken liver', variant: 'chicken liver', carb: 1.6, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.14}]},
+                {name: 'pork liver', variant: 'pork liver', carb: 0.8, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.14}]}
               ]},
               {name: 'Pie', category: 'Meat Products', carbs: [
-                {name: 'Pie, Cornish pasty', variant: 'Cornish pasty', carb: 28.4, amounts: [{key: '100g', value: 1}, {key: '1 pasty', value: 1.4}]},
-                {name: 'Pie, pork', variant: 'Pie', carb: 22.9, amounts: [{key: '100g', value: 1}, {key: '1 pie (3 x 10cm diameter)', value: 1.9}]}
+                {name: 'Cornish pasty', variant: 'Cornish pasty', carb: 28.4, amounts: [{key: '100g', value: 1}, {key: '1 pasty', value: 1.4}]},
+                {name: 'pork', variant: 'Pie', carb: 22.9, amounts: [{key: '100g', value: 1}, {key: '1 pie (3 x 10cm diameter)', value: 1.9}]}
               ]},
               {name: 'Sausage', category: 'Meat Products', carbs: [
-                {name: 'Sausage, assorted meats & flavours, dry fried', variant: 'assorted meats & flavours', carb: 7.3, amounts: [{key: '100g', value: 1}, {key: '1 sausage (11.8 x 3.0cm)', value: 0.78}]},
-                {name: 'Sausage, assorted meats & flavours, grilled', variant: 'assorted meats & flavours', carb: 9, amounts: [{key: '100g', value: 1}, {key: '1 sausage', value: 0.78}]},
-                {name: 'Sausage, assorted meats & flavours, precooked, grilled', variant: 'assorted meats & flavours', carb: 9.3, amounts: [{key: '100g', value: 1}, {key: '1 sausage', value: 0.7}]},
-                {name: 'Sausage, beef, barbecued, with no added fat', variant: 'beef', carb: 2.8, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.3 x 2.2cm diameter)', value: 0.299}, {key: '1 sausage (10.1 x 2.8cm diameter)', value: 0.619}]},
-                {name: 'Sausage, beef, boiled, drained', variant: 'beef', carb: 2.5, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.8 x 1.9cm diameter)', value: 0.572}, {key: '1 sausage (10.3 x 3.1cm diameter)', value: 0.722}]},
-                {name: 'Sausage, beef, grilled, with no added fat', variant: 'beef', carb: 2.8, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.3 x 2.2cm diameter)', value: 0.299}, {key: '1 sausage (10.1 x 2.8cm diameter)', value: 0.619}]},
-                {name: 'Sausage, beef, pan fried, with no added fat', variant: 'beef', carb: 2.9, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.3 x 2.2cm diameter)', value: 0.299}, {key: '1 sausage (10.1 x 2.8cm diameter)', value: 0.619}]},
-                {name: 'Sausage, black pudding, fried', variant: 'black pudding', carb: 13.7, amounts: [{key: '100g', value: 1}, {key: '1 slice (4 x 2cm diameter)', value: 0.3}]},
-                {name: 'Sausage, chicken, barbecued, with no added fat', variant: 'chicken', carb: 5, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.4 x 1.7cm diameter)', value: 0.232}, {key: '1 sausage (12.2 x 2.6cm diameter)', value: 0.706}]},
-                {name: 'Sausage, chicken, boiled, drained', variant: 'chicken', carb: 4.5, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.5 x 1.9cm diameter)', value: 0.26}, {key: '1 sausage (12.1 x 2.7cm diameter)', value: 0.712}]},
-                {name: 'Sausage, chicken, grilled, with no added fat', variant: 'chicken', carb: 5.4, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.4 x 1.7cm diameter)', value: 0.232}, {key: '1 sausage (12.2 x 2.6cm diameter)', value: 0.706}]},
-                {name: 'Sausage, chicken, pan fried, with no added fat', variant: 'chicken', carb: 4.9, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.4 x 1.7cm diameter)', value: 0.232}, {key: '1 sausage (12.2 x 2.6cm diameter)', value: 0.706}]},
-                {name: 'Sausage, frankfurters, precooked', variant: 'frankfurters', carb: 2.7, amounts: [{key: '100g', value: 1}, {key: '1 frankfurter (12.5 x 2.5cm diameter)', value: 0.57}]},
-                {name: 'Sausage, lamb, barbecued, with no added fat', variant: 'lamb', carb: 2.5, amounts: [{key: '100g', value: 1}, {key: '1 sausage (11.3 x 2.8cm diameter)', value: 0.751}]},
-                {name: 'Sausage, lamb, boiled, drained', variant: 'lamb', carb: 2.2, amounts: [{key: '100g', value: 1}, {key: '1 sausage (11.3 x 3.0cm diameter)', value: 0.824}]},
-                {name: 'Sausage, lamb, grilled, with no added fat', variant: 'lamb', carb: 2.5, amounts: [{key: '100g', value: 1}, {key: '1 sausage (11.3 x 2.8cm diameter)', value: 0.751}]},
-                {name: 'Sausage, lamb, pan fried, with no added fat', variant: 'lamb', carb: 2.4, amounts: [{key: '100g', value: 1}, {key: '1 sausage (11.3 x 2.8cm diameter)', value: 0.751}]},
-                {name: 'Sausage, pork, barbecued, with no added fat', variant: 'pork', carb: 2.2, amounts: [{key: '100g', value: 1}, {key: '1 sausage (10.5 x 2.8cm diameter)', value: 0.696}]},
-                {name: 'Sausage, pork, boiled, drained', variant: 'pork', carb: 2, amounts: [{key: '100g', value: 1}, {key: '1 sausage (10.4 x 3.0cm diameter)', value: 0.756}]},
-                {name: 'Sausage, pork, grilled, with no added fat', variant: 'pork', carb: 2.2, amounts: [{key: '100g', value: 1}, {key: '1 sausage (10.5 x 2.8cm diameter)', value: 0.696}]},
-                {name: 'Sausage, pork, pan fried, with no added fat', variant: 'pork', carb: 2.2, amounts: [{key: '100g', value: 1}, {key: '1 sausage (10.5 x 2.8cm diameter)', value: 0.696}]},
-                {name: 'Sausage, salami assorted meats & flavours', variant: 'salami assorted meats & flavours', carb: 0.6, amounts: [{key: '100g', value: 1}, {key: '1 slice (0.2 x 7.4cm diameter)', value: 0.079}]},
-                {name: 'Sausage, salami assorted meats & flavours, acidulated, heat treated', variant: 'salami assorted meats & flavours', carb: 0.7, amounts: [{key: '100g', value: 1}, {key: '1 slice (0.2 x 7.8cm diameter)', value: 0.083}]},
-                {name: 'Sausage, saveloy, boiled', variant: 'saveloy', carb: 5, amounts: [{key: '100g', value: 1}, {key: '1 saveloy', value: 0.85}]}
+                {name: 'assorted meats & flavours, dry fried', variant: 'assorted meats & flavours', carb: 7.3, amounts: [{key: '100g', value: 1}, {key: '1 sausage (11.8 x 3.0cm)', value: 0.78}]},
+                {name: 'assorted meats & flavours, grilled', variant: 'assorted meats & flavours', carb: 9, amounts: [{key: '100g', value: 1}, {key: '1 sausage', value: 0.78}]},
+                {name: 'assorted meats & flavours, precooked, grilled', variant: 'assorted meats & flavours', carb: 9.3, amounts: [{key: '100g', value: 1}, {key: '1 sausage', value: 0.7}]},
+                {name: 'beef, barbecued, with no added fat', variant: 'beef', carb: 2.8, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.3 x 2.2cm diameter)', value: 0.299}, {key: '1 sausage (10.1 x 2.8cm diameter)', value: 0.619}]},
+                {name: 'beef, boiled, drained', variant: 'beef', carb: 2.5, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.8 x 1.9cm diameter)', value: 0.572}, {key: '1 sausage (10.3 x 3.1cm diameter)', value: 0.722}]},
+                {name: 'beef, grilled, with no added fat', variant: 'beef', carb: 2.8, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.3 x 2.2cm diameter)', value: 0.299}, {key: '1 sausage (10.1 x 2.8cm diameter)', value: 0.619}]},
+                {name: 'beef, pan fried, with no added fat', variant: 'beef', carb: 2.9, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.3 x 2.2cm diameter)', value: 0.299}, {key: '1 sausage (10.1 x 2.8cm diameter)', value: 0.619}]},
+                {name: 'black pudding, fried', variant: 'black pudding', carb: 13.7, amounts: [{key: '100g', value: 1}, {key: '1 slice (4 x 2cm diameter)', value: 0.3}]},
+                {name: 'chicken, barbecued, with no added fat', variant: 'chicken', carb: 5, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.4 x 1.7cm diameter)', value: 0.232}, {key: '1 sausage (12.2 x 2.6cm diameter)', value: 0.706}]},
+                {name: 'chicken, boiled, drained', variant: 'chicken', carb: 4.5, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.5 x 1.9cm diameter)', value: 0.26}, {key: '1 sausage (12.1 x 2.7cm diameter)', value: 0.712}]},
+                {name: 'chicken, grilled, with no added fat', variant: 'chicken', carb: 5.4, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.4 x 1.7cm diameter)', value: 0.232}, {key: '1 sausage (12.2 x 2.6cm diameter)', value: 0.706}]},
+                {name: 'chicken, pan fried, with no added fat', variant: 'chicken', carb: 4.9, amounts: [{key: '100g', value: 1}, {key: '1 sausage (8.4 x 1.7cm diameter)', value: 0.232}, {key: '1 sausage (12.2 x 2.6cm diameter)', value: 0.706}]},
+                {name: 'frankfurters, precooked', variant: 'frankfurters', carb: 2.7, amounts: [{key: '100g', value: 1}, {key: '1 frankfurter (12.5 x 2.5cm diameter)', value: 0.57}]},
+                {name: 'lamb, barbecued, with no added fat', variant: 'lamb', carb: 2.5, amounts: [{key: '100g', value: 1}, {key: '1 sausage (11.3 x 2.8cm diameter)', value: 0.751}]},
+                {name: 'lamb, boiled, drained', variant: 'lamb', carb: 2.2, amounts: [{key: '100g', value: 1}, {key: '1 sausage (11.3 x 3.0cm diameter)', value: 0.824}]},
+                {name: 'lamb, grilled, with no added fat', variant: 'lamb', carb: 2.5, amounts: [{key: '100g', value: 1}, {key: '1 sausage (11.3 x 2.8cm diameter)', value: 0.751}]},
+                {name: 'lamb, pan fried, with no added fat', variant: 'lamb', carb: 2.4, amounts: [{key: '100g', value: 1}, {key: '1 sausage (11.3 x 2.8cm diameter)', value: 0.751}]},
+                {name: 'pork, barbecued, with no added fat', variant: 'pork', carb: 2.2, amounts: [{key: '100g', value: 1}, {key: '1 sausage (10.5 x 2.8cm diameter)', value: 0.696}]},
+                {name: 'pork, boiled, drained', variant: 'pork', carb: 2, amounts: [{key: '100g', value: 1}, {key: '1 sausage (10.4 x 3.0cm diameter)', value: 0.756}]},
+                {name: 'pork, grilled, with no added fat', variant: 'pork', carb: 2.2, amounts: [{key: '100g', value: 1}, {key: '1 sausage (10.5 x 2.8cm diameter)', value: 0.696}]},
+                {name: 'pork, pan fried, with no added fat', variant: 'pork', carb: 2.2, amounts: [{key: '100g', value: 1}, {key: '1 sausage (10.5 x 2.8cm diameter)', value: 0.696}]},
+                {name: 'salami assorted meats & flavours', variant: 'salami assorted meats & flavours', carb: 0.6, amounts: [{key: '100g', value: 1}, {key: '1 slice (0.2 x 7.4cm diameter)', value: 0.079}]},
+                {name: 'salami assorted meats & flavours, acidulated, heat treated', variant: 'salami assorted meats & flavours', carb: 0.7, amounts: [{key: '100g', value: 1}, {key: '1 slice (0.2 x 7.8cm diameter)', value: 0.083}]},
+                {name: 'saveloy, boiled', variant: 'saveloy', carb: 5, amounts: [{key: '100g', value: 1}, {key: '1 saveloy', value: 0.85}]}
               ]},
               {name: 'Miscellaneous', category: 'Miscellaneous', carbs: [
                 {name: 'Coffee whitener, powder', variant: 'Coffee whitener', carb: 54.9, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.081}]},
@@ -823,41 +823,41 @@ angular.module('myApp.carbcalc', ['ngRoute'])
                 {name: 'Yeast, baker\'s, dried', variant: 'Yeast', carb: 3.2, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.041}]}
               ]},
               {name: 'Coconut', category: 'Nuts and Seeds', carbs: [
-                {name: 'Coconut, cream, premium', variant: 'cream', carb: 1.5, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.552}]},
-                {name: 'Coconut, desiccated', variant: 'desiccated', carb: 6.1, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.066}, {key: '1 cup (250mL)', value: 1.106}]},
-                {name: 'Coconut, flesh, raw', variant: 'flesh', carb: 3.5, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL) grated', value: 0.94}]},
-                {name: 'Coconut, milk, standard', variant: 'milk', carb: 1.1, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.502}]}
+                {name: 'cream, premium', variant: 'cream', carb: 1.5, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.552}]},
+                {name: 'desiccated', variant: 'desiccated', carb: 6.1, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.066}, {key: '1 cup (250mL)', value: 1.106}]},
+                {name: 'flesh, raw', variant: 'flesh', carb: 3.5, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL) grated', value: 0.94}]},
+                {name: 'milk, standard', variant: 'milk', carb: 1.1, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.502}]}
               ]},
               {name: 'Nuts', category: 'Nuts and Seeds', carbs: [
-                {name: 'Nut, almond, dry roasted, salt added', variant: 'almond', carb: 5.3, amounts: [{key: '100g', value: 1}, {key: '10 almonds', value: 0.129}]},
-                {name: 'Nut, almond, dry roasted, unblanched, no salt added', variant: 'almond', carb: 5.6, amounts: [{key: '100g', value: 1}, {key: '10 almonds', value: 0.118}]},
-                {name: 'Nut, almond, kernels, dried, raw, unblanched', variant: 'almond', carb: 5.7, amounts: [{key: '100g', value: 1}, {key: '10 almonds', value: 0.112}]},
-                {name: 'Nut, brazilnut, raw', variant: 'brazilnut', carb: 3.8, amounts: [{key: '100g', value: 1}, {key: '10 brazilnuts', value: 0.38}]},
-                {name: 'Nut, cashew, raw', variant: 'cashew', carb: 16.8, amounts: [{key: '100g', value: 1}, {key: '10 nuts', value: 0.125}]},
-                {name: 'Nut, cashew, roasted, no salt added', variant: 'cashew', carb: 26.3, amounts: [{key: '100g', value: 1}, {key: '10 nuts', value: 0.124}]},
-                {name: 'Nut, cashew, roasted, salt added', variant: 'cashew', carb: 26.3, amounts: [{key: '100g', value: 1}, {key: '10 nuts', value: 0.125}]},
-                {name: 'Nut, hazelnut, whole, skin on, raw', variant: 'hazelnut', carb: 4, amounts: [{key: '100g', value: 1}, {key: '10 kernels', value: 0.11}]},
-                {name: 'Nut, macadamia, raw', variant: 'macadamia', carb: 4.5, amounts: [{key: '100g', value: 1}, {key: '10 nuts', value: 0.196}]},
-                {name: 'Nut, macadamia, roasted with oil, salt added', variant: 'macadamia', carb: 10.6, amounts: [{key: '100g', value: 1}, {key: '10 nuts', value: 0.196}]},
-                {name: 'Nut, mixed, salted', variant: 'mixed', carb: 10.1, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 1.5}]},
-                {name: 'Nut, peanut, all types, dry roasted, no salt added', variant: 'peanut', carb: 13.9, amounts: [{key: '100g', value: 1}, {key: '10 peanuts', value: 0.065}]},
-                {name: 'Nut, peanut, all types, roasted with oil, no salt added', variant: 'peanut', carb: 13.9, amounts: [{key: '100g', value: 1}, {key: '10 peanuts', value: 0.065}]},
-                {name: 'Nut, pecan, dried, raw', variant: 'pecan', carb: 13.8, amounts: [{key: '100g', value: 1}, {key: '10 whole nuts', value: 0.211}]},
-                {name: 'Nut, pine, raw', variant: 'pine', carb: 12.6, amounts: [{key: '100g', value: 1}, {key: '10 nuts', value: 0.016}, {key: '1 tablespoon (15mL)', value: 0.1}]},
-                {name: 'Nut, pistachio, raw', variant: 'pistachio', carb: 7.7, amounts: [{key: '100g', value: 1}, {key: '10 kernels', value: 0.064}]},
-                {name: 'Nut, walnut, kernel, halves & pieces, raw', variant: 'walnut', carb: 2.6, amounts: [{key: '100g', value: 1}, {key: '1 cup halves (250mL)', value: 1.148}, {key: '1 cup pieces (250mL)', value: 1.336}]},
-                {name: 'Nut, almond, roasted with oil, unblanched, no salt added', variant: 'almond', carb: 5.1, amounts: [{key: '100g', value: 1}, {key: '10 almonds', value: 0.129}]}
+                {name: 'almond, dry roasted, salt added', variant: 'almond', carb: 5.3, amounts: [{key: '100g', value: 1}, {key: '10 almonds', value: 0.129}]},
+                {name: 'almond, dry roasted, unblanched, no salt added', variant: 'almond', carb: 5.6, amounts: [{key: '100g', value: 1}, {key: '10 almonds', value: 0.118}]},
+                {name: 'almond, kernels, dried, raw, unblanched', variant: 'almond', carb: 5.7, amounts: [{key: '100g', value: 1}, {key: '10 almonds', value: 0.112}]},
+                {name: 'brazilnut, raw', variant: 'brazilnut', carb: 3.8, amounts: [{key: '100g', value: 1}, {key: '10 brazilnuts', value: 0.38}]},
+                {name: 'cashew, raw', variant: 'cashew', carb: 16.8, amounts: [{key: '100g', value: 1}, {key: '10 nuts', value: 0.125}]},
+                {name: 'cashew, roasted, no salt added', variant: 'cashew', carb: 26.3, amounts: [{key: '100g', value: 1}, {key: '10 nuts', value: 0.124}]},
+                {name: 'cashew, roasted, salt added', variant: 'cashew', carb: 26.3, amounts: [{key: '100g', value: 1}, {key: '10 nuts', value: 0.125}]},
+                {name: 'hazelnut, whole, skin on, raw', variant: 'hazelnut', carb: 4, amounts: [{key: '100g', value: 1}, {key: '10 kernels', value: 0.11}]},
+                {name: 'macadamia, raw', variant: 'macadamia', carb: 4.5, amounts: [{key: '100g', value: 1}, {key: '10 nuts', value: 0.196}]},
+                {name: 'macadamia, roasted with oil, salt added', variant: 'macadamia', carb: 10.6, amounts: [{key: '100g', value: 1}, {key: '10 nuts', value: 0.196}]},
+                {name: 'mixed, salted', variant: 'mixed', carb: 10.1, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 1.5}]},
+                {name: 'peanut, all types, dry roasted, no salt added', variant: 'peanut', carb: 13.9, amounts: [{key: '100g', value: 1}, {key: '10 peanuts', value: 0.065}]},
+                {name: 'peanut, all types, roasted with oil, no salt added', variant: 'peanut', carb: 13.9, amounts: [{key: '100g', value: 1}, {key: '10 peanuts', value: 0.065}]},
+                {name: 'pecan, dried, raw', variant: 'pecan', carb: 13.8, amounts: [{key: '100g', value: 1}, {key: '10 whole nuts', value: 0.211}]},
+                {name: 'pine, raw', variant: 'pine', carb: 12.6, amounts: [{key: '100g', value: 1}, {key: '10 nuts', value: 0.016}, {key: '1 tablespoon (15mL)', value: 0.1}]},
+                {name: 'pistachio, raw', variant: 'pistachio', carb: 7.7, amounts: [{key: '100g', value: 1}, {key: '10 kernels', value: 0.064}]},
+                {name: 'walnut, kernel, halves & pieces, raw', variant: 'walnut', carb: 2.6, amounts: [{key: '100g', value: 1}, {key: '1 cup halves (250mL)', value: 1.148}, {key: '1 cup pieces (250mL)', value: 1.336}]},
+                {name: 'almond, roasted with oil, unblanched, no salt added', variant: 'almond', carb: 5.1, amounts: [{key: '100g', value: 1}, {key: '10 almonds', value: 0.129}]}
               ]},
               {name: 'Peanut butter', category: 'Nuts and Seeds', carbs: [
-                {name: 'Peanut butter, smooth & crunchy, no sugar or salt added', variant: 'no sugar or salt added', carb: 10.8, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.064}, {key: '1 tablespoon (15mL)', value: 0.192}]},
-                {name: 'Peanut butter, smooth & crunchy, salt & sugar added', variant: 'salt & sugar added', carb: 16.4, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.062}, {key: '1 tablespoon (15mL)', value: 0.186}]},
-                {name: 'Peanut butter, smooth & crunchy, salt added, no sugar added', variant: 'salt added, no sugar added', carb: 10.7, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.061}]}
+                {name: 'smooth & crunchy, no sugar or salt added', variant: 'no sugar or salt added', carb: 10.8, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.064}, {key: '1 tablespoon (15mL)', value: 0.192}]},
+                {name: 'smooth & crunchy, salt & sugar added', variant: 'salt & sugar added', carb: 16.4, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.062}, {key: '1 tablespoon (15mL)', value: 0.186}]},
+                {name: 'smooth & crunchy, salt added, no sugar added', variant: 'salt added, no sugar added', carb: 10.7, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.061}]}
               ]},
-              {name: 'Seeds', category: 'Nuts and Seeds', carbs: [
-                {name: 'Seed, pumpkin & squash, kernel, dried', variant: 'pumpkin & squash', carb: 4.4, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 1.38}]},
-                {name: 'Seed, sesame butter, tahini', variant: 'sesame butter', carb: 1.4, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.16}]},
-                {name: 'Seed, sesame, dried, raw', variant: 'sesame', carb: 8.5, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.086}]},
-                {name: 'Seed, sunflower, kernel, dried', variant: 'sunflower', carb: 10.6, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon ground (15mL)', value: 0.069}]}
+              {name: 'Secategory: 'Nuts and Seeds', carbs: [
+                {name: 'pumpkin & squash, kernel, dried', variant: 'pumpkin & squash', carb: 4.4, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 1.38}]},
+                {name: 'sesame butter, tahini', variant: 'sesame butter', carb: 1.4, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.16}]},
+                {name: 'sesame, dried, raw', variant: 'sesame', carb: 8.5, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.086}]},
+                {name: 'sunflower, kernel, dried', variant: 'sunflower', carb: 10.6, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon ground (15mL)', value: 0.069}]}
               ]},
               {name: 'Recipes', category: 'Recipes', carbs: [
                 {name: 'Cake, chocolate, baked, iced with butter icing', variant: 'Cake', carb: 54.7, amounts: [{key: '100g', value: 1}]},
@@ -880,42 +880,42 @@ angular.module('myApp.carbcalc', ['ngRoute'])
                 {name: 'Tart, jam, baked', variant: 'Tart', carb: 53.4, amounts: [{key: '100g', value: 1}]}
               ]},
               {name: 'Dip', category: 'Sauces & Condiments', carbs: [
-                {name: 'Dip, sour cream, assorted flavours, 30% fat, La Bonne', variant: 'sour cream', carb: 5.8, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.142}]},
-                {name: 'Dip, sour cream, lite, assorted flavours, 7% fat', variant: 'sour cream', carb: 7.3, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.158}]}
+                {name: 'sour cream, assorted flavours, 30% fat, La Bonne', variant: 'sour cream', carb: 5.8, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.142}]},
+                {name: 'sour cream, lite, assorted flavours, 7% fat', variant: 'sour cream', carb: 7.3, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.158}]}
               ]},
               {name: 'Dressings', category: 'Sauces & Condiments', carbs: [
-                {name: 'Dressing, coleslaw, Lite, Eta', variant: 'coleslaw', carb: 20.4, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.152}]},
-                {name: 'Dressing, French, Kraft', variant: 'French', carb: 8, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.15}]},
-                {name: 'Dressing, Italian, Kraft', variant: 'Italian', carb: 5.9, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.147}]},
-                {name: 'Dressing, mayonnaise, commercial', variant: 'mayonnaise', carb: 18.6, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.147}]},
-                {name: 'Dressing, mayonnaise, reduced fat, commercial', variant: 'mayonnaise', carb: 23.2, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.138}]},
-                {name: 'Dressing, thousand island, Eta', variant: 'thousand island', carb: 15.4, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.156}]},
-                {name: 'Dressing, vinaigrette', variant: 'vinaigrette', carb: 10, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.16}]}
+                {name: 'coleslaw, Lite, Eta', variant: 'coleslaw', carb: 20.4, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.152}]},
+                {name: 'French, Kraft', variant: 'French', carb: 8, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.15}]},
+                {name: 'Italian, Kraft', variant: 'Italian', carb: 5.9, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.147}]},
+                {name: 'mayonnaise, commercial', variant: 'mayonnaise', carb: 18.6, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.147}]},
+                {name: 'mayonnaise, reduced fat, commercial', variant: 'mayonnaise', carb: 23.2, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.138}]},
+                {name: 'thousand island, Eta', variant: 'thousand island', carb: 15.4, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.156}]},
+                {name: 'vinaigrette', variant: 'vinaigrette', carb: 10, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.16}]}
               ]},
               {name: 'Gravy', category: 'Sauces & Condiments', carbs: [
-                {name: 'Gravy, dry powder mix, assorted flavours, prepared with water', variant: 'dry powder mix', carb: 4, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.514}]}
+                {name: 'dry powder mix, assorted flavours, prepared with water', variant: 'dry powder mix', carb: 4, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.514}]}
               ]},
               {name: 'Hummus', category: 'Sauces & Condiments', carbs: [
-                {name: 'Hummus, original, 6.5% fat', variant: 'original', carb: 11.3, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.156}]}
+                {name: 'original, 6.5% fat', variant: 'original', carb: 11.3, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.156}]}
               ]},
               {name: 'Pickle', category: 'Sauces & Condiments', carbs: [
-                {name: 'Pickle, sweet', variant: 'sweet', carb: 34, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.17}]}
+                {name: 'sweet', variant: 'sweet', carb: 34, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.17}]}
               ]},
               {name: 'Sauces', category: 'Sauces & Condiments', carbs: [
-                {name: 'Sauce, chilli', variant: 'chilli', carb: 17.7, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.17}]},
-                {name: 'Sauce, chilli, sweet, commercial', variant: 'chilli', carb: 45.5, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.184}]},
-                {name: 'Sauce, fish', variant: 'fish', carb: 4.4, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.182}]},
-                {name: 'Sauce, pasta, chunky vegetable, tomato based, heated', variant: 'pasta', carb: 10.6, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.734}]},
-                {name: 'Sauce, simmer, butter chicken, heated', variant: 'simmer', carb: 9.8, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.676}]},
-                {name: 'Sauce, simmer, korma, cream & coconut base', variant: 'simmer', carb: 6.6, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.662}]},
-                {name: 'Sauce, simmer, satay, heated', variant: 'simmer', carb: 12, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.71}]},
-                {name: 'Sauce, simmer, sweet & sour, heated', variant: 'simmer', carb: 27, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.827}]},
-                {name: 'Sauce, soy, commercial', variant: 'soy', carb: 4, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.176}]},
-                {name: 'Sauce, soy, reduced salt, commercial', variant: 'soy', carb: 3.2, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.172}]},
-                {name: 'Sauce, tartar, Eta', variant: 'tartar', carb: 7, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.146}]},
-                {name: 'Sauce, tomato', variant: 'tomato', carb: 24.9, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.165}]},
-                {name: 'Sauce, tomato, ketchup', variant: 'tomato', carb: 24.4, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.063}]},
-                {name: 'Sauce, Worcestershire', variant: 'Worcestershire', carb: 17.6, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.18}]}
+                {name: 'chilli', variant: 'chilli', carb: 17.7, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.17}]},
+                {name: 'chilli, sweet, commercial', variant: 'chilli', carb: 45.5, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.184}]},
+                {name: 'fish', variant: 'fish', carb: 4.4, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.182}]},
+                {name: 'pasta, chunky vegetable, tomato based, heated', variant: 'pasta', carb: 10.6, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.734}]},
+                {name: 'simmer, butter chicken, heated', variant: 'simmer', carb: 9.8, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.676}]},
+                {name: 'simmer, korma, cream & coconut base', variant: 'simmer', carb: 6.6, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.662}]},
+                {name: 'simmer, satay, heated', variant: 'simmer', carb: 12, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.71}]},
+                {name: 'simmer, sweet & sour, heated', variant: 'simmer', carb: 27, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.827}]},
+                {name: 'soy, commercial', variant: 'soy', carb: 4, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.176}]},
+                {name: 'soy, reduced salt, commercial', variant: 'soy', carb: 3.2, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.172}]},
+                {name: 'tartar, Eta', variant: 'tartar', carb: 7, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.146}]},
+                {name: 'tomato', variant: 'tomato', carb: 24.9, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.165}]},
+                {name: 'tomato, ketchup', variant: 'tomato', carb: 24.4, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.063}]},
+                {name: 'Worcestershire', variant: 'Worcestershire', carb: 17.6, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.18}]}
               ]},
               {name: 'Shellfishes', category: 'Shellfishes', carbs: [
                 {name: 'Cockle, boiled', variant: 'Cockle', carb: 0, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.5}]},
@@ -963,42 +963,42 @@ angular.module('myApp.carbcalc', ['ngRoute'])
                   {name: 'Snack, popcorn, candied', variant: 'Snack', carb: 79.3, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 0.216}]}
                 ]},
                 {name: 'Soups', category: 'Soups', carbs: [
-                  {name: 'Soup, beef, instant dry mix, prepared with water, Continental', variant: 'beef', carb: 8, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.5}]},
-                  {name: 'Soup, bone & vegetable broth', variant: 'bone & vegetable broth', carb: 1.1, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.54}]},
-                  {name: 'Soup, chicken & corn, heated', variant: 'chicken & corn', carb: 3.9, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.707}]},
-                  {name: 'Soup, chicken & corn, heated, Wattie\'s', variant: 'chicken & corn', carb: 3.8, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.517}]},
-                  {name: 'Soup, chicken & vegetable, heated, Wattie\'s', variant: 'chicken & vegetable', carb: 3.9, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.706}]},
-                  {name: 'Soup, chicken noodle, instant dry mix, prepared with water, Continental', variant: 'chicken noodle', carb: 9.8, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.75}]},
-                  {name: 'Soup, chicken noodle, instant dry mix, prepared with water, Maggi', variant: 'chicken noodle', carb: 2.9, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.75}]},
-                  {name: 'Soup, cream of chicken, canned', variant: 'cream of chicken', carb: 4.2, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.59}]},
-                  {name: 'Soup, cream of mushroom, canned', variant: 'cream of mushroom', carb: 3.6, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.61}]},
-                  {name: 'Soup, cream of tomato, canned', variant: 'cream of tomato', carb: 5.5, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.6}]},
-                  {name: 'Soup, creme of chicken, instant dry mix, prepared with water, Maggi', variant: 'creme of chicken', carb: 3.2, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.65}]},
-                  {name: 'Soup, creme of vegetable, instant dry mix, prepared with water, Maggi', variant: 'creme of vegetable', carb: 3.5, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.5}]},
-                  {name: 'Soup, lentil & vegetables, heated, Wattie\'s', variant: 'lentil & vegetables', carb: 5.9, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.704}]},
-                  {name: 'Soup, minestrone, instant dry mix, prepared with water', variant: 'minestrone', carb: 3.5, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.68}]},
-                  {name: 'Soup, mushroom, instant dry mix, prepared with water, Maggi', variant: 'mushroom', carb: 3, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.5}]},
-                  {name: 'Soup, pumpkin, heated', variant: 'pumpkin', carb: 9.9, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.75}]},
-                  {name: 'Soup, pumpkin, heated, Wattie\'s', variant: 'pumpkin', carb: 3.1, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.487}]},
-                  {name: 'Soup, seafood chowder, heated', variant: 'seafood chowder', carb: 4.4, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.635}]},
-                  {name: 'Soup, tomato, instant dry mix, prepared with water, Continental', variant: 'tomato', carb: 6.1, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.57}]},
-                  {name: 'Soup, Tuscan tomato, heated, Wattie\'s', variant: 'Tuscan tomato', carb: 4.8, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.601}]},
-                  {name: 'Soup, vegetable, canned', variant: 'vegetable', carb: 6.2, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.57}]}
+                  {name: 'beef, instant dry mix, prepared with water, Continental', variant: 'beef', carb: 8, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.5}]},
+                  {name: 'bone & vegetable broth', variant: 'bone & vegetable broth', carb: 1.1, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.54}]},
+                  {name: 'chicken & corn, heated', variant: 'chicken & corn', carb: 3.9, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.707}]},
+                  {name: 'chicken & corn, heated, Wattie\'s', variant: 'chicken & corn', carb: 3.8, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.517}]},
+                  {name: 'chicken & vegetable, heated, Wattie\'s', variant: 'chicken & vegetable', carb: 3.9, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.706}]},
+                  {name: 'chicken noodle, instant dry mix, prepared with water, Continental', variant: 'chicken noodle', carb: 9.8, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.75}]},
+                  {name: 'chicken noodle, instant dry mix, prepared with water, Maggi', variant: 'chicken noodle', carb: 2.9, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.75}]},
+                  {name: 'cream of chicken, canned', variant: 'cream of chicken', carb: 4.2, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.59}]},
+                  {name: 'cream of mushroom, canned', variant: 'cream of mushroom', carb: 3.6, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.61}]},
+                  {name: 'cream of tomato, canned', variant: 'cream of tomato', carb: 5.5, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.6}]},
+                  {name: 'creme of chicken, instant dry mix, prepared with water, Maggi', variant: 'creme of chicken', carb: 3.2, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.65}]},
+                  {name: 'creme of vegetable, instant dry mix, prepared with water, Maggi', variant: 'creme of vegetable', carb: 3.5, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.5}]},
+                  {name: 'lentil & vegetables, heated, Wattie\'s', variant: 'lentil & vegetables', carb: 5.9, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.704}]},
+                  {name: 'minestrone, instant dry mix, prepared with water', variant: 'minestrone', carb: 3.5, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.68}]},
+                  {name: 'mushroom, instant dry mix, prepared with water, Maggi', variant: 'mushroom', carb: 3, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.5}]},
+                  {name: 'pumpkin, heated', variant: 'pumpkin', carb: 9.9, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.75}]},
+                  {name: 'pumpkin, heated, Wattie\'s', variant: 'pumpkin', carb: 3.1, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.487}]},
+                  {name: 'seafood chowder, heated', variant: 'seafood chowder', carb: 4.4, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.635}]},
+                  {name: 'tomato, instant dry mix, prepared with water, Continental', variant: 'tomato', carb: 6.1, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.57}]},
+                  {name: 'Tuscan tomato, heated, Wattie\'s', variant: 'Tuscan tomato', carb: 4.8, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.601}]},
+                  {name: 'vegetable, canned', variant: 'vegetable', carb: 6.2, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.57}]}
                 ]},
-                {name: 'Chocolate Bars & Blocks', category: 'Sugars, Confectionaries and Sweet spreads', carbs: [
-                  {name: 'Chocolate bar & bite size, Moro, Cadbury', variant: 'Moro', carb: 58.1, amounts: [{key: '100g', value: 1}, {key: '1 treat size bar (4.5 x 2.2 x 1.6cm)', value: 0.181}, {key: '1 bar (11.4 x 3.1 x 1.9cm)', value: 0.651}]},
-                  {name: 'Chocolate bar & block, Dairy Milk Fruit & Nut, Cadbury', variant: 'Dairy Milk Fruit & Nut', carb: 52.2, amounts: [{key: '100g', value: 1}, {key: '1 bar (12.8 x 3.4 x 1.2cm)', value: 0.515}, {key: '1 block (20.5 x 9.5 x 1.0cm)', value: 2.057}]},
-                  {name: 'Chocolate bar & block, Dairy Milk with Crunchie, Cadbury', variant: 'Dairy Milk with Crunchie', carb: 59.7, amounts: [{key: '100g', value: 1}, {key: '1 block (20.4 x 9.5 x 0.9cm)', value: 1.981}, {key: '1 block (20.1 x 16.2 x 1.0cm)', value: 3.547}]},
-                  {name: 'Chocolate bar & block, Energy, Cadbury', variant: 'Energy', carb: 53.7, amounts: [{key: '100g', value: 1}, {key: '1 bar (12.5 x 3.1 x 1.1cm)', value: 0.512}, {key: '1 block (20.3 x 9.4 x 0.9cm)', value: 2.048}]},
-                  {name: 'Chocolate bar, Bounty, Mars', variant: 'Bounty', carb: 55.5, amounts: [{key: '100g', value: 1}, {key: '1 bar', value: 0.5}]},
-                  {name: 'Chocolate bar, Gold Totally Nuts Bar, Moro, Cadbury', variant: 'Gold Totally Nuts Bar', carb: 43.4, amounts: [{key: '100g', value: 1}, {key: '1 bar (10.9 x 2.7 x 2.2cm)', value: 0.628}]},
-                  {name: 'Chocolate bar, Mars', variant: 'Mars', carb: 63.3, amounts: [{key: '100g', value: 1}, {key: '1 bar', value: 0.6}]},
-                  {name: 'Chocolate bar, milk', variant: 'milk', carb: 56.5, amounts: [{key: '100g', value: 1}, {key: '1 small bar', value: 0.5}, {key: '1 large bar', value: 1.2}]},
-                  {name: 'Chocolate block & slab, Peanut, Whittaker\'s', variant: 'Peanut', carb: 45.6, amounts: [{key: '100g', value: 1}, {key: '1 slab (7.4 x 3.6 x 1.7cm)', value: 0.52}, {key: '1 block (19.9 x 10.6 x 1.1cm)', value: 2.594}]},
-                  {name: 'Chocolate, compound', variant: 'compound', carb: 65.5, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.155}]},
-                  {name: 'Chocolate, dark', variant: 'dark', carb: 62.8, amounts: [{key: '100g', value: 1}, {key: '1 cup grated (250mL)', value: 0.88}]},
-                  {name: 'Chocolate, fancy & filled', variant: 'fancy & filled', carb: 69.8, amounts: [{key: '100g', value: 1}, {key: '1 chocolate', value: 0.05}]},
-                  {name: 'Chocolate, white', variant: 'white', carb: 55.5, amounts: [{key: '100g', value: 1}, {key: '1 cup grated (250mL)', value: 0.88}]}
+                {name: 'Chocolate', category: 'Sugars, Confectionaries and Sweet spreads', carbs: [
+                  {name: 'bar & bite size, Moro, Cadbury', variant: 'Moro', carb: 58.1, amounts: [{key: '100g', value: 1}, {key: '1 treat size bar (4.5 x 2.2 x 1.6cm)', value: 0.181}, {key: '1 bar (11.4 x 3.1 x 1.9cm)', value: 0.651}]},
+                  {name: 'bar & block, Dairy Milk Fruit & Nut, Cadbury', variant: 'Dairy Milk Fruit & Nut', carb: 52.2, amounts: [{key: '100g', value: 1}, {key: '1 bar (12.8 x 3.4 x 1.2cm)', value: 0.515}, {key: '1 block (20.5 x 9.5 x 1.0cm)', value: 2.057}]},
+                  {name: 'bar & block, Dairy Milk with Crunchie, Cadbury', variant: 'Dairy Milk with Crunchie', carb: 59.7, amounts: [{key: '100g', value: 1}, {key: '1 block (20.4 x 9.5 x 0.9cm)', value: 1.981}, {key: '1 block (20.1 x 16.2 x 1.0cm)', value: 3.547}]},
+                  {name: 'bar & block, Energy, Cadbury', variant: 'Energy', carb: 53.7, amounts: [{key: '100g', value: 1}, {key: '1 bar (12.5 x 3.1 x 1.1cm)', value: 0.512}, {key: '1 block (20.3 x 9.4 x 0.9cm)', value: 2.048}]},
+                  {name: 'bar, Bounty, Mars', variant: 'Bounty', carb: 55.5, amounts: [{key: '100g', value: 1}, {key: '1 bar', value: 0.5}]},
+                  {name: 'bar, Gold Totally Nuts Bar, Moro, Cadbury', variant: 'Gold Totally Nuts Bar', carb: 43.4, amounts: [{key: '100g', value: 1}, {key: '1 bar (10.9 x 2.7 x 2.2cm)', value: 0.628}]},
+                  {name: 'bar, Mars', variant: 'Mars', carb: 63.3, amounts: [{key: '100g', value: 1}, {key: '1 bar', value: 0.6}]},
+                  {name: 'bar, milk', variant: 'milk', carb: 56.5, amounts: [{key: '100g', value: 1}, {key: '1 small bar', value: 0.5}, {key: '1 large bar', value: 1.2}]},
+                  {name: 'block & slab, Peanut, Whittaker\'s', variant: 'Peanut', carb: 45.6, amounts: [{key: '100g', value: 1}, {key: '1 slab (7.4 x 3.6 x 1.7cm)', value: 0.52}, {key: '1 block (19.9 x 10.6 x 1.1cm)', value: 2.594}]},
+                  {name: 'compound', variant: 'compound', carb: 65.5, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 2.155}]},
+                  {name: 'dark', variant: 'dark', carb: 62.8, amounts: [{key: '100g', value: 1}, {key: '1 cup grated (250mL)', value: 0.88}]},
+                  {name: 'fancy & filled', variant: 'fancy & filled', carb: 69.8, amounts: [{key: '100g', value: 1}, {key: '1 chocolate', value: 0.05}]},
+                  {name: 'white', variant: 'white', carb: 55.5, amounts: [{key: '100g', value: 1}, {key: '1 cup grated (250mL)', value: 0.88}]}
                 ]},
                 {name: 'Gum', category: 'Sugars, Confectionaries and Sweet spreads', carbs: [
                   {name: 'Fruit gum', variant: '', carb: 57.9, amounts: [{key: '100g', value: 1}, {key: '1 fruit gum', value: 0.02}]}
@@ -1029,9 +1029,9 @@ angular.module('myApp.carbcalc', ['ngRoute'])
                   {name: 'Syrup, golden', variant: 'golden', carb: 76.6, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.2}]}
                 ]},
                 {name: 'Sugar', category: 'Sugars, Confectionaries and Sweet spreads', carbs: [
-                  {name: 'Sugar, brown', variant: 'brown', carb: 95.1, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.037}, {key: '1 cup (250mL)', value: 1.855}]},
-                  {name: 'Sugar, raw', variant: 'raw', carb: 99.2, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.039}, {key: '1 cup (250mL)', value: 1.935}]},
-                  {name: 'Sugar, white', variant: 'white', carb: 100, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.049}, {key: '1 cup (250mL)', value: 2.468}]}
+                  {name: 'brown', variant: 'brown', carb: 95.1, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.037}, {key: '1 cup (250mL)', value: 1.855}]},
+                  {name: 'raw', variant: 'raw', carb: 99.2, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.039}, {key: '1 cup (250mL)', value: 1.935}]},
+                  {name: 'white', variant: 'white', carb: 100, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.049}, {key: '1 cup (250mL)', value: 2.468}]}
                 ]},
                 {name: 'Raw Vegetables', category: 'Vegetables & Pulses', carbs: [
                   {name: 'Asparagus, stalk, fresh, raw', variant: 'Asparagus', carb: 1.6, amounts: [{key: '100g', value: 1}, {key: '1 spear (16-20cm long)', value: 0.15}]},
