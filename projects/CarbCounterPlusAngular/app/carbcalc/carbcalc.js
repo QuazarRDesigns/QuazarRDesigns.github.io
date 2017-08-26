@@ -853,7 +853,7 @@ angular.module('myApp.carbcalc', ['ngRoute'])
                 {name: 'smooth & crunchy, salt & sugar added', variant: 'salt & sugar added', carb: 16.4, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.062}, {key: '1 tablespoon (15mL)', value: 0.186}]},
                 {name: 'smooth & crunchy, salt added, no sugar added', variant: 'salt added, no sugar added', carb: 10.7, amounts: [{key: '100g', value: 1}, {key: '1 teaspoon (5mL)', value: 0.061}]}
               ]},
-              {name: 'Secategory: 'Nuts and Seeds', carbs: [
+              {name: 'Seeds', category: 'Nuts and Seeds', carbs: [
                 {name: 'pumpkin & squash, kernel, dried', variant: 'pumpkin & squash', carb: 4.4, amounts: [{key: '100g', value: 1}, {key: '1 cup (250mL)', value: 1.38}]},
                 {name: 'sesame butter, tahini', variant: 'sesame butter', carb: 1.4, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.16}]},
                 {name: 'sesame, dried, raw', variant: 'sesame', carb: 8.5, amounts: [{key: '100g', value: 1}, {key: '1 tablespoon (15mL)', value: 0.086}]},
