@@ -20,13 +20,12 @@ var urlsToCache = [
   'components/version/version-directive.js',
   'components/version/interpolate-filter.js',
   'https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2',
+  'favicons/favicon.ico',
   'favicons/favicon-16x16.png',
   'favicons/favicon-32x32.png',
   'favicons/android-chrome-192x192.png',
   'favicons/android-chrome-512x512.png',
   'favicons/manifest.json'
-
-
 ];
 
 self.addEventListener('install', function (event) {

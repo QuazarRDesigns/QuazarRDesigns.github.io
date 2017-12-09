@@ -1,0 +1,98 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+body {
+  background: #fcc90a;
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+select {
+  background: #ddd;
+  border: none;
+  height: 2em;
+  outline: none;
+  width: 100%;
+}
+
+input {
+  background: #ddd;
+  border: none;
+  margin-left: 0;
+  outline: none;
+  padding-left: 0.0625em;
+  width: 100%;
+}
+
+input:focus {
+  background: #ccc;
+}
+
+button {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+button:hover {
+  outline: 0.0625em solid #000;
+}
+
+fieldset {
+  background: #fff;
+  border: none;
+  margin: 0;
+  padding: 0.625em 0.625em 0 0.625em;
+  width: 100%;
+}
+
+/*background colour classes*/
+
+.background--yellow {
+  background: #fcc90a;
+}
+
+.background--blue {
+  background: #05baf0;
+}
+
+.background--green {
+  background: #3D994A;
+}
+
+.background--pink {
+  background: #e33663;
+}
+
+/***************************/
+
+.app-wrapper {
+  display: inherit;  
+  flex: 1;
+  flex-flow: column nowrap;
+  font-size: 1em;
+}
+
+.selected {
+  outline: 0.0625em solid #000;
+}
+
+@media only screen and (min-width: 1024px) {
+  
+  .app-wrapper {
+    font-size: 1.3em;
+  }
+  
+}
