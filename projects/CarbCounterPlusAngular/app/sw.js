@@ -1,9 +1,11 @@
-var CACHE_NAME = 'carbcounter-cache-v0.4.1';
+var CACHE_NAME = 'carbcounter-cache-v0.4.2';
 var urlsToCache = [
   'index.html',
+  'https://code.jquery.com/jquery-3.1.1.min.js',
   'https://fonts.googleapis.com/css?family=Montserrat:400,700',
   'bower_components/html5-boilerplate/dist/css/normalize.css',
   'app.css',
+  'app.js',
   'bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js',
   'bower_components/angular/angular.js',
   'bower_components/angular-route/angular-route.js',
@@ -30,40 +32,36 @@ var urlsToCache = [
 
 self.addEventListener('install', function (event) {
   // Perform install steps
-  event.waitUntil(
-          caches.open(CACHE_NAME)
-          .then(function (cache) {
-            console.log('Opened cache');
-            return cache.addAll(urlsToCache);
-          })
-          );
+  event.waitUntil(precache());
 });
+
 
 self.addEventListener('fetch', function (event) {
-  event.respondWith(
-          caches.match(event.request)
-          .then(function (response) {
-            // Cache hit - return response
-            if (response) {
-              return response;
-            }
-            return fetch(event.request);
-          }
-          )
-          );
+  event.respondWith(fromCache(event.request));
+
+  event.waitUntil(update(event.request));
 });
 
-self.addEventListener('activate', function(event) {
-  var cacheWhitelist = [CACHE_NAME];
+function precache() {
+  return caches.open(CACHE_NAME)
+  .then(function (cache) {
+    console.log('Opened cache');
+    return cache.addAll(urlsToCache)
+  })
+}
 
-  event.waitUntil(
-    caches.keys().then(function(keyList) {
-      return Promise.all(keyList.map(function(key) {
-        if (cacheWhitelist.indexOf(key) === -1) {
-          console.log('Deleted previous cache');
-          return caches.delete(key);
-        }
-      }));
-    })
-  );
-});
+function fromCache(request) {
+  return caches.open(CACHE_NAME).then(function (cache) {
+    return cache.match(request).then(function (matching) {
+      return matching || Promise.reject('no-match');
+    });
+  });
+}
+
+function update(request) {
+  return caches.open(CACHE_NAME).then(function (cache) {
+    return fetch(request).then(function (response) {
+      return cache.put(request, response);
+    });
+  });
+}
