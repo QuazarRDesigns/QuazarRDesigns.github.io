@@ -364,11 +364,13 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1em;
+  position: absolute;
+  bottom: 0;
   width: 100%;
 }
 
 .copyright {
-  color: #000;
+  color: #fff;
   line-height: 40px;
 }
 
@@ -378,35 +380,21 @@ html {
   margin: 0 1em;
 }
 
-.social-links a {
+.social-link {
   fill: #000;
 }
 
-.social-links a:hover,
-.social-links a:focus {
+.social-link:hover,
+.social-link:focus {
   fill: #f29420;
 }
 
-.social-links__twitter,
-.twitter-logo {
+.social-link {
   display: inline-block;
   height: 40px;
   width: 40px;
 }
 
-.social-links__github,
-.github-logo {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-}
-
-.social-links__codepen,
-.codepen-logo {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-}
 
 @media only screen and (min-width: 500px) {
   .menu {
