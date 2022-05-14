@@ -11,9 +11,24 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 }
 
 html {
+  min-height: 100vh;
   background: #f29420;
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main {
+  flex: 1;
 }
 
 .quazarrdesigns-logo {
@@ -364,8 +379,6 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1em;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 
