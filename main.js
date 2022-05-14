@@ -15,7 +15,39 @@ var modal = document.querySelector(".modal"),
             to help myself to more accurately calculate my carb intake and insulin dosages
             and added some settings so it can be set up to help more people than just myself.
             <br/>
+            This is a newer version created using Vue.
+          <div class="modal-aside__features">
+            <h2>Features</h2>
+            <ul class="modal-aside__feature-list">
+              <li>Carbohydrate calculator</li>
+              <li>Doseage calculator</li>
+              <li>Set carb unit CU, BU, and g</li>
+              <li>Set blood glucose unit mmol/l, and mg/dl</li>
+              <li>Set correction factor</li>
+              <li>Set target BG level</li>
+              <li>Set carb to insulin ratio</li>
+            </ul>
+          </div>`,
+            "link": "https://quazarrdesigns.github.io/projects/CarbCounterPlusVue/index.html",
+            "images": [{
+                "desktop": [{
+                    "src": "./img/modal/carbcounter_desktop.png",
+                    "alt": "Carb Counter Plus"
+                  }],
+                "mobile": [{
+                    "src": "./img/modal/carbcounter_mobile.png",
+                    "alt": "Carb Counter Plus"
+                  }]
+              }]
+          },
+          "portfolio__item--2": {
+            "title": "CarbCounter+ PWA (Legacy)",
+            "description": `CarbCounter+ is a PWA (Progressive Web App) that I created
+            to help myself to more accurately calculate my carb intake and insulin dosages
+            and added some settings so it can be set up to help more people than just myself.
+            <br/>
             I used AngularJS to build for Angular's simple data binding and instant updating of values.
+            This is now outdated.
           <div class="modal-aside__features">
             <h2>Features</h2>
             <ul class="modal-aside__feature-list">
@@ -32,15 +64,15 @@ var modal = document.querySelector(".modal"),
             "images": [{
                 "desktop": [{
                     "src": "./img/modal/carbcounter_desktop.png",
-                    "alt": "List CRM"
+                    "alt": "Carb Counter Plus"
                   }],
                 "mobile": [{
                     "src": "./img/modal/carbcounter_mobile.png",
-                    "alt": "List CRM"
+                    "alt": "Carb Counter Plus"
                   }]
               }]
           },
-          "portfolio__item--2": {
+          "portfolio__item--3": {
             "title": "List CRM Phonegap App",
             "description": `List CRM is a simplified CRM (Customer Relationship Management) App
             designed for easy and quick use by sales representatives after they contact one of their many
@@ -56,7 +88,7 @@ var modal = document.querySelector(".modal"),
               <li>Sortable list</li>
             </ul>
           </div>`,
-            "link": "http://matthew.rayner.yoobee.net.nz/WE06/WE06_App/www/index.html#!/modules/login",
+            "link": "http://quazarrdesigns.co.nz/projects/List_CRM_APP/www/index.html#!/modules/login",
             "images": [{
                 "desktop": [{
                     "src": "./img/modal/list_crm_calllist_desktop.png",
@@ -68,7 +100,7 @@ var modal = document.querySelector(".modal"),
                   }]
               }]
           },
-          "portfolio__item--3": {
+          "portfolio__item--4": {
             "title": "Fly to the Limit",
             "description": `Fly to the limit is an example scenic flight booking website.`,
             "link": "https://quazarrdesigns.github.io/projects/FTTL/index.html",
@@ -83,7 +115,7 @@ var modal = document.querySelector(".modal"),
                   }]
               }]
           },
-          "portfolio__item--4": {
+          "portfolio__item--5": {
             "title": "SAB Identity Design",
             "description": `I made this branding for a class project SAB is a fictional company.
       The goal of the branding was to convey stability and integrity`,
@@ -99,7 +131,7 @@ var modal = document.querySelector(".modal"),
                   }]
               }]
           },
-          "portfolio__item--5": {
+          "portfolio__item--6": {
             "title": "EECA Ad Campaign",
             "description": `Fictional advertising campaign for a scheme to switch to electric vehicles by EECA.`,
             "link": "./projects/EECA_ad_campaign.pdf",
@@ -114,7 +146,7 @@ var modal = document.querySelector(".modal"),
                   }]
               }]
           },
-          "portfolio__item--6": {
+          "portfolio__item--7": {
             "title": "NZ Scientific Magazine",
             "description": `Fictional magazine using articles from Mentalfloss.`,
             "link": "./projects/NZSci_magazine.pdf",
@@ -129,7 +161,7 @@ var modal = document.querySelector(".modal"),
                   }]
               }]
           },
-          "portfolio__item--7": {
+          "portfolio__item--8": {
             "title": "Kids in the Kitchen",
             "description": `A fictional brochure encouraging children to learn to cook healthy food with their caregivers.`,
             "link": "./projects/KITK_brochure.pdf",
@@ -144,7 +176,7 @@ var modal = document.querySelector(".modal"),
                   }]
               }]
           },
-          "portfolio__item--8": {
+          "portfolio__item--9": {
             "title": "Quality Heating Services",
             "description": `An actual commercial logo I created for Quality Heating Services here in Christchurch.`,
             "link": "./projects/QHS_Logo.pdf",

@@ -310,65 +310,74 @@ main {
 }
 
 .portfolio__item--2 {
-  background: url(img/portfolio/list_crm_calllist_desktop.png) top center no-repeat;
+  background: url(img/portfolio/carbcounter_desktop.png) top center no-repeat;
   background-size: cover;
 }
 
 .portfolio__item--2:after {
-  content: "List CRM Phonegap App";
+  content: "CarbCounter+ PWA (Legacy)";
 }
 
 .portfolio__item--3 {
-  background: url(img/portfolio/FTTL.png) top center no-repeat;
+  background: url(img/portfolio/list_crm_calllist_desktop.png) top center no-repeat;
   background-size: cover;
 }
 
 .portfolio__item--3:after {
-  content: "Fly to the Limit";
+  content: "List CRM Phonegap App";
 }
 
 .portfolio__item--4 {
-  background: url(img/portfolio/sab_businesscard.png) left center no-repeat;
+  background: url(img/portfolio/FTTL.png) top center no-repeat;
   background-size: cover;
 }
 
 .portfolio__item--4:after {
-  content: "SAB Brand Identity";
+  content: "Fly to the Limit";
 }
 
 .portfolio__item--5 {
-  background: url(img/portfolio/EECA_billboard.png) left center no-repeat;
+  background: url(img/portfolio/sab_businesscard.png) left center no-repeat;
   background-size: cover;
 }
 
 .portfolio__item--5:after {
-  content: "EECA Ad Campaign";
+  content: "SAB Brand Identity";
 }
 
 .portfolio__item--6 {
-  background: url(img/portfolio/NZSci_Magazine.png) left center no-repeat;
+  background: url(img/portfolio/EECA_billboard.png) left center no-repeat;
   background-size: cover;
 }
 
 .portfolio__item--6:after {
-  content: "NZ Scientific Magazine";
+  content: "EECA Ad Campaign";
 }
 
 .portfolio__item--7 {
-  background: url(img/portfolio/KITK_brochure.png) left center no-repeat;
+  background: url(img/portfolio/NZSci_Magazine.png) left center no-repeat;
   background-size: cover;
 }
 
 .portfolio__item--7:after {
-  content: "Kids in the Kitchen Brochure";
+  content: "NZ Scientific Magazine";
 }
 
 .portfolio__item--8 {
-  background: url(img/portfolio/qhs_logo.png) center no-repeat;
+  background: url(img/portfolio/KITK_brochure.png) left center no-repeat;
   background-size: cover;
 }
 
 .portfolio__item--8:after {
+  content: "Kids in the Kitchen Brochure";
+}
+
+.portfolio__item--9 {
+  background: url(img/portfolio/qhs_logo.png) center no-repeat;
+  background-size: cover;
+}
+
+.portfolio__item--9:after {
   content: "QHS Logo";
 }
 
@@ -444,11 +453,6 @@ main {
 
   .portfolio-items {
     flex-flow: row wrap;
-  }
-
-  .portfolio__item--1 {
-    background: url(img/portfolio/carbcounter_desktop.png) top center no-repeat;
-    background-size: cover;
   }
 }
 
