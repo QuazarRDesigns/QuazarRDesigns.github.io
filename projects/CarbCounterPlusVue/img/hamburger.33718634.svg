@@ -1,0 +1,23 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="top__hamburger"
+    ng-click="toggleNav()"
+    viewBox="0 0 40 40"
+>
+    <defs>
+    <style type="text/css">
+        .blue {
+        fill: #05baf0;
+        }
+        .green {
+        fill: #3d994a;
+        }
+        .yellow {
+        fill: #fcc90a;
+        }
+    </style>
+    </defs>
+    <rect class="blue" width="40" height="8" />
+    <rect class="green" y="16" width="40" height="8" />
+    <rect class="yellow" y="32" width="40" height="8" />
+</svg>
